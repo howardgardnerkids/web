@@ -1,6 +1,6 @@
 export const profesores = [
   {
-    img: "img/profesores/parvulos.webp",
+    img: "/img/profesores/parvulos.webp",
     titlePp: "Profesora de Párvulos",
     title: "Camila Ramirez",
     subtitle: "8 años de experiencia",
@@ -11,7 +11,7 @@ export const profesores = [
     principal: true,
   },
   {
-    img: "img/profesores/preJardin.webp",
+    img: "/img/profesores/preJardin.webp",
     titlePp: "Profesora de Pre-jardín",
     title: "Carol Medina",
     subtitle: "4 años de experiencia",
@@ -22,7 +22,7 @@ export const profesores = [
     principal: true,
   },
   {
-    img: "img/profesores/jardin.webp",
+    img: "/img/profesores/jardin.webp",
     titlePp: "Profesora de Jardín",
     title: "Nury Ramirez",
     subtitle: "5 años de experiencia",
@@ -33,7 +33,7 @@ export const profesores = [
     principal: true,
   },
   {
-    img: "img/profesores/jardinAvanzado.webp",
+    img: "/img/profesores/jardinAvanzado.webp",
     titlePp: "Profesora de Jardín Avanzado",
     title: "Natali Mendez",
     subtitle: "10 años de experiencia",
@@ -45,7 +45,7 @@ export const profesores = [
   },
 
   {
-    img: "img/profesores/ingles.webp",
+    img: "/img/profesores/ingles.webp",
     titlePp: "Profesora de Ingles",
     title: "Camila Ramirez",
     subtitle: "4 años de experiencia",
@@ -56,7 +56,7 @@ export const profesores = [
     principal: false,
   },
   {
-    img: "img/profesores/artes.webp",
+    img: "/img/profesores/artes.webp",
     titlePp: "Profesora de Artes",
     title: "Carol Medina",
     subtitle: "2 años de experiencia",
@@ -67,7 +67,7 @@ export const profesores = [
     principal: false,
   },
   {
-    img: "img/profesores/futbol.webp",
+    img: "/img/profesores/futbol.webp",
     titlePp: "Profesora de Futboll",
     title: "Nury Ramirez",
     subtitle: "5 años de experiencia",
@@ -78,7 +78,7 @@ export const profesores = [
     principal: false,
   },
   {
-    img: "img/profesores/ballet.webp",
+    img: "/img/profesores/ballet.webp",
     titlePp: "Profesora de Balllet",
     title: "Natali Mendez",
     subtitle: "10 años de experiencia",

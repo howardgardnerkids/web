@@ -2,7 +2,7 @@ export const servicios = [
   {
     id: "camara",
     imgHome: "/img/fotoServicioCamaras.webp",
-    imgServicios: "img/camaraServicios.jpg",
+    imgServicios: "/img/camaraServicios.jpg",
     titleHome: "Cámaras de monitoreo",
     bgIconHome: "bg-primary",
     fillIconHome: "fill-primary",
@@ -23,7 +23,7 @@ export const servicios = [
   {
     id: "ingles",
     imgHome: "/img/fotoServicioclassIngles.webp",
-    imgServicios: "img/inglesServicios.jpg",
+    imgServicios: "/img/inglesServicios.jpg",
     titleHome: "Ingles Intensivo",
     bgIconHome: "bg-secondary",
     fillIconHome: "fill-secondary",
@@ -44,7 +44,7 @@ export const servicios = [
   {
     id: "psicologia",
     imgHome: "/img/fotoServicioPsicologia.webp",
-    imgServicios: "img/psicologiaServicios.jpg",
+    imgServicios: "/img/psicologiaServicios.jpg",
     titleHome: "Profesional de Psicologia",
     titleServicios: "Psicología Infantil",
     bgIconHome: "bg-primary",
@@ -65,7 +65,7 @@ export const servicios = [
   {
     id: "nutricion",
     imgHome: "/img/fotoServicioNutricion.webp",
-    imgServicios: "img/nutricionServicios.jpg",
+    imgServicios: "/img/nutricionServicios.jpg",
     titleHome: "Nutrición Infantil",
     titleServicios: "Nutrición Balanceada",
     bgIconHome: "bg-secondary",
@@ -86,7 +86,7 @@ export const servicios = [
   {
     id: "ruta",
     imgHome: "/img/fotoServicioRuta.webp",
-    imgServicios: "img/rutaEscolarServicios.webp",
+    imgServicios: "/img/rutaEscolarServicios.webp",
     titleHome: "Ruta Escolar",
     titleServicios: "Transporte Escolar Seguro y Confiable",
     bgIconHome: "bg-primary",
