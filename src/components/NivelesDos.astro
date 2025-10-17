@@ -1,0 +1,40 @@
+---
+import NivelesItems from "@/components/NivelesItems.astro";
+import { niveles } from "@/constants/niveles";
+---
+
+<section
+  class="animate-fade-in-up max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl mx-auto w-full grid md:grid-cols-2 2xl:grid-cols-4 p-4 my-40"
+>
+  {
+    niveles.map((nivel) => (
+      <NivelesItems
+        title={nivel.title}
+        description={nivel.description1}
+        img={nivel.img}
+        descp2={nivel.description2}
+        bg1={nivel.bg1}
+        bg2={nivel.bg2}
+        icon1={nivel.icon1}
+      />
+    ))
+  }
+</section>
+
+<style>
+  .animate-fade-in-up {
+    animation-play-state: paused;
+  }
+  .animate-fade-in-up.play {
+    animation-play-state: running;
+    animation-duration: 1.5s;
+  }
+</style>
+
+<script>
+  import { observer } from "@/utils/observer";
+
+  document
+    .querySelectorAll(".animate-fade-in-up")
+    .forEach((el) => observer.observe(el));
+</script>

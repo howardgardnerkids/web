@@ -1,0 +1,33 @@
+---
+const { titlePp, title, subtitle, description1, description2, img, bg } =
+  Astro.props;
+
+const bgcolor = bg ? "bg-primary/70" : "bg-secondary/60";
+---
+
+<article class="h-[750px]">
+  <div class="bg-transparent relative overflow-hidden h-[250px]">
+    <img
+      src={img}
+      alt="foto profesora artes"
+      class="absolute w-full h-[250px] object-top my-1 object-cover"
+    />
+  </div>
+  <div class={`px-3 py-5 h-[500px] ${bgcolor}`}>
+    <div class="bg-black/8 rounded-3xl px-5 py-5 backdrop-blur-xs h-full">
+      <h3 class="text-2xl font-bold text-accent-700 w-full text-center">
+        {titlePp}
+      </h3>
+      <h2 class="text-2xl capitalize font-rakkas text-center">{title}</h2>
+      <h4 class="text-white/80 text-center text-base 2xl:text-lg">
+        {subtitle}
+      </h4>
+      <p class="text-sm w-full my-3">
+        {description1}
+      </p>
+      <p class="hidden 2xl:blocktext-sm w-full">
+        {description2}
+      </p>
+    </div>
+  </div>
+</article>

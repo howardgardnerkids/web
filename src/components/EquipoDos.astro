@@ -1,0 +1,100 @@
+---
+import EquipoItemDos from "./EquipoItemDos.astro";
+import CarruselEquipo from "./CarruselEquipo";
+import { profesores } from "@/constants/profesores";
+
+const profesoresPrincipales = profesores.filter(
+  (profesor) => profesor.principal
+);
+
+const profesoresSecundarios = profesores.filter(
+  (profesor) => !profesor.principal
+);
+---
+
+<div class="w-3/4 text-center mx-auto my-20">
+  <h3
+    class="animate-fade-in-up w-full text-4xl md:text-5xl fond-rakkas text-center uppercase font-bold text-secondary font-rakkas"
+  >
+    Talento Humano
+  </h3>
+</div>
+
+<section
+  class="bg-gray max-w-6xl 2xl:max-w-[1350px] mx-auto w-full my-28 lg:rounded-4xl shadow-2xl overflow-hidden relative"
+>
+  <div
+    class="w-full h-full inset-0 bg-[url('img/bg-figuras.webp')] bg-contain mx-auto"
+  >
+    <div class="animate-fade-in-up hidden xl:grid grid-cols-4">
+      {
+        profesoresPrincipales.map((profesor) => (
+          <EquipoItemDos
+            img={profesor.img}
+            titlePp={profesor.titlePp}
+            title={profesor.title}
+            subtitle={profesor.subtitle}
+            description1={profesor.description1}
+            description2={profesor.description2}
+          />
+        ))
+      }
+    </div>
+
+    <div class="animate-fade-in-up block xl:hidden mx-8">
+      <CarruselEquipo client:load principal />
+    </div>
+  </div>
+</section>
+
+<div class="w-3/4 text-center mx-auto my-20">
+  <h3
+    class="animate-fade-in-up w-full text-4xl md:text-5xl fond-rakkas text-center uppercase font-bold text-primary font-rakkas"
+  >
+    Extracurriculares
+  </h3>
+</div>
+
+<section
+  class="bg-gray max-w-6xl 2xl:max-w-[1350px] mx-auto w-full my-28 rounded-4xl shadow-2xl overflow-hidden relative"
+>
+  <div class="w-full h-full inset-0 bg-[url('img/bg-figuras.webp')] bg-contain">
+    <div class="animate-fade-in-up hidden xl:grid grid-cols-4">
+      {
+        profesoresSecundarios.map((profesor) => (
+          <EquipoItemDos
+            img={profesor.img}
+            titlePp={profesor.titlePp}
+            title={profesor.title}
+            subtitle={profesor.subtitle}
+            description1={profesor.description1}
+            description2={profesor.description2}
+            bg
+          />
+        ))
+      }
+    </div>
+
+    <div class="animate-fade-in-up block xl:hidden mx-8">
+      <CarruselEquipo client:load />
+    </div>
+  </div>
+</section>
+
+<style>
+  .animate-fade-in-up {
+    animation-play-state: paused;
+  }
+  .animate-fade-in-up.play {
+    animation-play-state: running;
+    animation-duration: 1.5s;
+  }
+</style>
+
+<script>
+  import { observer } from "@/utils/observer";
+
+  document
+    .querySelectorAll(".animate-fade-in-up")
+    .forEach((el) => observer.observe(el));
+</script>

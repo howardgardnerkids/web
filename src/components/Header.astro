@@ -1,0 +1,110 @@
+---
+import Menu from "@/components/Menu.astro";
+import Button from "@/components/Button.astro";
+---
+
+<header
+  class="relative bg-primary-300 bg-[url('img/bg-figuras.webp')] bg-repeat bg-contain h-[740px] overflow-hidden"
+>
+  <Menu />
+
+  <div
+    class="bg-scroll absolute bottom-0 z-10 w-full h-[135px] lg:h-40 xl:h-48 2xl:h-[280px]"
+  >
+  </div>
+  <img
+    src="img/nubes_verdes.png"
+    alt="nubes verdes"
+    class="absolute bottom-0 w-full"
+  />
+
+  <div
+    class="max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 md:gap-2 lg:gap-3"
+  >
+    <div class="animate-fade-in-up lg:mx-3 z-20 text-center md:text-left">
+      <h3
+        class="my-5 text-base sm:text-lg md:text-base lg:text-xl font-bold text-accent-700"
+      >
+        ¡Aprender es una aventura!
+      </h3>
+      <h1
+        class="my-5 text-4xl sm:text-5xl md:text-3xl xl:text-5xl 2xl:text-6xl uppercase font-rakkas"
+      >
+        HOWARD GARDNER
+      </h1>
+      <p
+        class="my-5 lg:w-3/4 text-letter text-base sm:text-lg xl:text-xl font-medium"
+      >
+        Howard Gardner es un jardín infantil que tiene como principal objetivo
+        desarrollar desde el juego, el afecto y el amor la formación integral de
+        los niños (a).
+      </p>
+      <div class="w-full">
+        <Button text="Contactanos" url="/contacto" />
+      </div>
+    </div>
+
+    <div class="hidden md:block">
+      <img
+        src="img/vector-home.webp"
+        alt="fondo naranja"
+        class="rotate180 absolute md:h-[310px] lg:h-[420px] xl:h-[480px]"
+      />
+      <img
+        src="img/fotoHeaderMonsterin.webp"
+        alt="monster header"
+        class="animate-fade-in-up monster absolute md:h-[320px] lg:h-[420px] xl:h-[480px] z-10"
+      />
+    </div>
+  </div>
+</header>
+
+<style>
+  .bg-scroll {
+    width: 100vw;
+    background: url("img/nubes_blancas_largas.png") repeat-x;
+    background-size: cover;
+    animation: move-bg 130s linear infinite;
+  }
+
+  @keyframes move-bg {
+    from {
+      background-position-x: 0;
+    }
+    to {
+      background-position-x: -100%;
+    }
+  }
+
+  .animate-fade-in-up {
+    animation-play-state: paused;
+  }
+  .animate-fade-in-up.play {
+    animation-play-state: running;
+    animation-duration: 1.5s;
+  }
+
+  .animate-fade-in-up.monster.play {
+    animation-play-state: running;
+    animation-duration: 1.5s;
+    animation-delay: 600ms;
+  }
+
+  .rotate180 {
+    opacity: 0;
+  }
+  .rotate180.play {
+    animation: rotate180 30s linear infinite;
+    animation-delay: 2s;
+  }
+</style>
+
+<script>
+  import { observer } from "@/utils/observer";
+
+  document
+    .querySelectorAll(".animate-fade-in-up")
+    .forEach((el) => observer.observe(el));
+
+  document.querySelectorAll(".rotate180").forEach((el) => observer.observe(el));
+</script>

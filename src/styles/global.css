@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@plugin "@midudev/tailwind-animations";
+
+@theme {
+  --color-primary: #1f8e93;
+  --color-primary-300: #89e1e5;
+  --color-secondary: #00519f;
+  --color-secondary-300: #add8ff;
+  --color-accent: #f3752b;
+  --color-accent-300: #fbcdb2;
+  --color-accent-700: #d45017;
+  --color-gray: #f0efeb;
+  --color-letter: #444;
+
+  --font-rakkas: "Rakkas", system-ui;
+  --font-sans: "Inter Variable", sans-serif;
+}

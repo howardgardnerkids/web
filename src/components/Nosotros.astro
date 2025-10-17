@@ -1,0 +1,283 @@
+---
+import Button from "@/components/Button.astro";
+
+const { title, subtitle, description, description2, hasButton, listPrincipal } =
+  Astro.props;
+---
+
+<section class="relative mx-auto w-full xl:py-24">
+  <img
+    class="animateSlideInRight absolute h-[350px] lg:h-[480px] -left-12 top-10 xl:top-16"
+    src="img/Vector.png"
+    alt="fondo azul"
+  />
+  <div
+    class="animateShakeCirculos1 absolute top-[3rem] md:top-[1rem] xl:top-[4rem] left-[15rem] md:left-[12rem] lg:left-[16rem] xl:left-[20rem] size-14 bg-secondary rounded-full"
+  >
+  </div>
+  <div
+    class="animateShakeCirculos2 absolute top-[7rem] md:top-[6rem] xl:top-[8rem] left-[20rem] md:left-[16rem] lg:left-[22rem] xl:left-[24rem] size-8 bg-secondary rounded-full"
+  >
+  </div>
+
+  <div
+    class="animateShakeCirculos3 absolute top-[18rem] md:top-[17rem] lg:top-[20rem] xl:top-[29rem] left-[16rem] lg:left-[22rem] xl:left-[19rem] size-7 bg-secondary rounded-full"
+  >
+  </div>
+  <div
+    class="animateShakeCirculos4 absolute top-[20rem] lg:top-[24rem] xl:top-[32rem] left-[14rem] lg:left-[20rem] xl:left-[16rem] size-4 bg-secondary rounded-full"
+  >
+  </div>
+  <img
+    class="animateSlideInRight absolute h-[380px] lg:h-[530px] -left-0.5 top-10 xl:top-16"
+    src="img/fotoSullivanCintaPresentacion.webp"
+    alt="sullivan con cinta"
+  />
+  <img
+    class="animate-blurred-fade-in absolute h-36 md:h-28 lg:h-40 xl:h-52 mt-32 lg:mt-36 xl:mt-30 ml-48 md:ml-44 lg:ml-64"
+    src="img/librosAnimados.webp"
+    alt="libros animados"
+  />
+
+  <div
+    class="max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl mx-auto w-full pt-[400px] md:pt-6"
+  >
+    <div class="flex justify-end">
+      <div class="md:w-3/5 xl:-mx-7 mb-16">
+        <h3
+          class="animate-fade-in-up my-5 text-lg md:text-xl font-bold text-secondary"
+        >
+          {title}
+        </h3>
+        <h2
+          class="animate-fade-in-up sm:w-4/5 md:w-full my-5 text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl font-rakkas"
+        >
+          {subtitle}
+        </h2>
+        <p
+          class="animate-fade-in-up my-5 w-full 2xl:w-3/4 text-base lg:text-lg font-medium text-letter"
+        >
+          {description}
+        </p>
+
+        <p
+          class="hidden sm:block animate-fade-in-up w-full 2xl:w-3/4 text-base lg:text-lg text-left font-medium text-letter"
+        >
+          {description2}
+        </p>
+
+        {
+          listPrincipal && (
+            <div class="animate-fade-in-up flex mt-6 md:my-4 gap-5">
+              <div class="flex items-center h-18 md:h-12 lg:gap-2.5 mb-6">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="55"
+                  height="55"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="stroke-primary"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M21 12l-9 -9l-9 9h2v7a2 2 0 0 0 2 2h6" />
+                  <path d="M9 21v-6a2 2 0 0 1 2 -2h2c.39 0 .754 .112 1.061 .304" />
+                  <path d="M19 21.5l2.518 -2.58a1.74 1.74 0 0 0 0 -2.413a1.627 1.627 0 0 0 -2.346 0l-.168 .172l-.168 -.172a1.627 1.627 0 0 0 -2.346 0a1.74 1.74 0 0 0 0 2.412l2.51 2.59z" />
+                </svg>
+                <p class="my-5 w-1/2 text-base lg:text-lg font-medium text-letter">
+                  Ambiente hogareño
+                </p>
+              </div>
+
+              <div class="flex items-center h-18 md:h-12 lg:gap-2.5 mb-6">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="55"
+                  height="55"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="stroke-primary"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M6 21v-2a4 4 0 0 1 4 -4h2" />
+                  <path d="M22 16c0 4 -2.5 6 -3.5 6s-3.5 -2 -3.5 -6c1 0 2.5 -.5 3.5 -1.5c1 1 2.5 1.5 3.5 1.5z" />
+                  <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                </svg>
+                <p class="my-5 w-1/2 text-base lg:text-lg font-medium text-letter">
+                  Calidad, Seguridad y Protección
+                </p>
+              </div>
+            </div>
+          )
+        }
+
+        {
+          !listPrincipal && (
+            <div class="animate-fade-in-up flex mt-6 md:my-4 gap-5">
+              <div class="flex items-center h-12 w-1/3 gap-2.5 mb-6">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="55"
+                  height="55"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="stroke-accent size-11 lg:size-16"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M21 12l-9 -9l-9 9h2v7a2 2 0 0 0 2 2h6" />
+                  <path d="M9 21v-6a2 2 0 0 1 2 -2h2c.39 0 .754 .112 1.061 .304" />
+                  <path d="M19 21.5l2.518 -2.58a1.74 1.74 0 0 0 0 -2.413a1.627 1.627 0 0 0 -2.346 0l-.168 .172l-.168 -.172a1.627 1.627 0 0 0 -2.346 0a1.74 1.74 0 0 0 0 2.412l2.51 2.59z" />
+                </svg>
+                <p class="my-5 text-sm lg:text-base xl:text-lg font-medium text-letter">
+                  Ambiente hogareño
+                </p>
+              </div>
+
+              <div class="flex items-center h-12 w-1/3 gap-2.5 mb-6">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="55"
+                  height="55"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="stroke-accent size-11 lg:size-20"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M6 21v-2a4 4 0 0 1 4 -4h2" />
+                  <path d="M22 16c0 4 -2.5 6 -3.5 6s-3.5 -2 -3.5 -6c1 0 2.5 -.5 3.5 -1.5c1 1 2.5 1.5 3.5 1.5z" />
+                  <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                </svg>
+                <p class="my-5 text-sm lg:text-base xl:text-lg font-medium text-letter">
+                  Seguridad y Protección
+                </p>
+              </div>
+
+              <div class="flex items-center h-12 w-1/3 gap-2.5 mb-6">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="60"
+                  height="60"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="stroke-accent size-12 lg:size-20"
+                >
+                  <>
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M11 4a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
+                    <path d="M3 17l5 1l.75 -1.5" />
+                    <path d="M14 21v-4l-4 -3l1 -6" />
+                    <path d="M6 12v-3l5 -1l3 3l3 1" />
+                    <path
+                      d="M19.5 20a.5 .5 0 1 0 0 -1a.5 .5 0 0 0 0"
+                      fill="currentColor"
+                    />
+                  </>
+                </svg>
+                <p class="my-5 text-sm lg:text-base xl:text-lg font-medium text-letter">
+                  Estimulación a través del juego
+                </p>
+              </div>
+            </div>
+          )
+        }
+
+        {hasButton && <Button text="Más sobre nosotros" url="/nosotros" />}
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .animateSlideInRight {
+      opacity: 0;
+    }
+    .animateSlideInRight.play {
+      animation: animateSlideInRight 1s ease-in forwards;
+    }
+
+    .animate-blurred-fade-in {
+      animation-play-state: paused;
+    }
+    .animate-blurred-fade-in.play {
+      animation-play-state: running;
+      animation-delay: 1s;
+      animation-duration: 500ms;
+    }
+
+    .animate-fade-in-up {
+      animation-play-state: paused;
+    }
+    .animate-fade-in-up.play {
+      animation-play-state: running;
+      animation-duration: 1.5s;
+    }
+
+    .animateShakeCirculos1 {
+      animation: shakeCirculos 5s ease-in-out infinite;
+    }
+    .animateShakeCirculos2 {
+      animation: shakeCirculos 3s ease-in-out infinite;
+      animation-delay: 300ms;
+    }
+    .animateShakeCirculos3 {
+      animation: shakeCirculos 4s ease-in-out infinite;
+      animation-delay: 600ms;
+    }
+    .animateShakeCirculos4 {
+      animation: shakeCirculos 3s ease-in-out infinite;
+    }
+
+    @keyframes shakeCirculos {
+      0% {
+        transform: translateX(0) translateY(0);
+      }
+      25% {
+        transform: translateX(-10px) translateY(-10px);
+      }
+
+      50% {
+        transform: translateX(10px);
+      }
+      75% {
+        transform: translateX(-10px);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+  </style>
+
+  <script>
+    import { observer } from "@/utils/observer";
+
+    document
+      .querySelectorAll(".animateSlideInRight")
+      .forEach((el) => observer.observe(el));
+
+    document
+      .querySelectorAll(".animate-blurred-fade-in")
+      .forEach((el) => observer.observe(el));
+
+    document
+      .querySelectorAll(".animate-fade-in-up")
+      .forEach((el) => observer.observe(el));
+  </script>
+</section>

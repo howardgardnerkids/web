@@ -1,11 +1,31 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Nosotros from "@/components/Nosotros.astro";
+import Service from "@/components/Service.astro";
+import Equipo from "@/components/Equipo.astro";
+import Testimonios from "@/components/Testimonios.astro";
+import CallToAction from "@/components/CallToAction.astro";
+import Footer from "@/components/Footer.astro";
 ---
 
 <Layout>
-	<Welcome />
+  <Header />
+
+  <main>
+    <Nosotros
+      title="¡La aventura de aprender!"
+      subtitle="¡Donde las pequeñas manos crean grandes sueños!"
+      description="Howard Gardner es un jardín altamente calificado para desarrollar en los niños una formación integral en valores de calor humano, fortaleciendo su autoestima, despertando su imaginación y su creatividad, todo esto, a través de ambientes adecuados que brindan al niño la seguridad de aprender, tomar decisiones y enfrentarse a los cambios en su entorno social."
+      description2=""
+      hasButton
+      listPrincipal
+    />
+    <Service />
+    <Equipo />
+    <Testimonios />
+    <CallToAction />
+  </main>
+
+  <Footer />
 </Layout>

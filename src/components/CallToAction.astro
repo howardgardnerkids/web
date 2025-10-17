@@ -1,0 +1,158 @@
+---
+import Button from "@/components/Button.astro";
+
+const { noGotas } = Astro.props;
+---
+
+<section class="relative h-full pt-20 pb-40 bg-gray">
+  {
+    !noGotas && (
+      <div class="absolute left-1/2 -translate-x-1/2 -top-16 w-full h-[64px]">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="100%"
+          viewBox="0 0 283.5 27.8"
+          preserveAspectRatio="xMidYMax slice"
+          class="fill-gray w-full rotate-180"
+        >
+          <path d="M0 0v1.4c.6.7 1.1 1.4 1.4 2 2 3.8 2.2 6.6 1.8 10.8-.3 3.3-2.4 9.4 0 12.3 1.7 2 3.7 1.4 4.6-.9 1.4-3.8-.7-8.2-.6-12 .1-3.7 3.2-5.5 6.9-4.9 4 .6 4.8 4 4.9 7.4.1 1.8-1.1 7 0 8.5.6.8 1.6 1.2 2.4.5 1.4-1.1.1-5.4.1-6.9.1-3.7.3-8.6 4.1-10.5 5-2.5 6.2 1.6 5.4 5.6-.4 1.7-1 9.2 2.9 6.3 1.5-1.1.7-3.5.5-4.9-.4-2.4-.4-4.3 1-6.5.9-1.4 2.4-3.1 4.2-3 2.4.1 2.7 2.2 4 3.7 1.5 1.8 1.8 2.2 3 .1 1.1-1.9 1.2-2.8 3.6-3.3 1.3-.3 4.8-1.4 5.9-.5 1.5 1.1.6 2.8.4 4.3-.2 1.1-.6 4 1.8 3.4 1.7-.4-.3-4.1.6-5.6 1.3-2.2 5.8-1.4 7 .5 1.3 2.1.5 5.8.1 8.1s-1.2 5-.6 7.4c1.3 5.1 4.4.9 4.3-2.4-.1-4.4-2-8.8-.5-13 .9-2.4 4.6-6.6 7.7-4.5 2.7 1.8.5 7.8.2 10.3-.2 1.7-.8 4.6.2 6.2.9 1.4 2 1.5 2.6-.3.5-1.5-.9-4.5-1-6.1-.2-1.7-.4-3.7.2-5.4 1.8-5.6 3.5 2.4 6.3.6 1.4-.9 4.3-9.4 6.1-3.1.6 2.2-1.3 7.8.7 8.9 4.2 2.3 1.5-7.1 2.2-8 3.1-4 4.7 3.8 6.1 4.1 3.1.7 2.8-7.9 8.1-4.5 1.7 1.1 2.9 3.3 3.2 5.2.4 2.2-1 4.5-.6 6.6 1 4.3 4.4 1.5 4.4-1.7 0-2.7-3-8.3 1.4-9.1 4.4-.9 7.3 3.5 7.8 6.9.3 2-1.5 10.9 1.3 11.3 4.1.6-3.2-15.7 4.8-15.8 4.7-.1 2.8 4.1 3.9 6.6 1 2.4 2.1 1 2.3-.8.3-1.9-.9-3.2 1.3-4.3 5.9-2.9 5.9 5.4 5.5 8.5-.3 2-1.7 8.4 2 8.1 6.9-.5-2.8-16.9 4.8-18.7 4.7-1.2 6.1 3.6 6.3 7.1.1 1.7-1.2 8.1.6 9.1 3.5 2 1.9-7 2-8.4.2-4 1.2-9.6 6.4-9.8 4.7-.2 3.2 4.6 2.7 7.5-.4 2.2 1.3 8.6 3.8 4.4 1.1-1.9-.3-4.1-.3-6 0-1.7.4-3.2 1.3-4.6 1-1.6 2.9-3.5 5.1-2.9 2.5.6 2.3 4.1 4.1 4.9 1.9.8 1.6-.9 2.3-2.1 1.2-2.1 2.1-2.1 4.4-2.4 1.4-.2 3.6-1.5 4.9-.5 2.3 1.7-.7 4.4.1 6.5.6 1.5 2.1 1.7 2.8.3.7-1.4-1.1-3.4-.3-4.8 1.4-2.5 6.2-1.2 7.2 1 2.3 4.8-3.3 12-.2 16.3 3 4.1 3.9-2.8 3.8-4.8-.4-4.3-2.1-8.9 0-13.1 1.3-2.5 5.9-5.7 7.9-2.4 2 3.2-1.3 9.8-.8 13.4.5 4.4 3.5 3.3 2.7-.8-.4-1.9-2.4-10 .6-11.1 3.7-1.4 2.8 7.2 6.5.4 2.2-4.1 4.9-3.1 5.2 1.2.1 1.5-.6 3.1-.4 4.6.2 1.9 1.8 3.7 3.3 1.3 1-1.6-2.6-10.4 2.9-7.3 2.6 1.5 1.6 6.5 4.8 2.7 1.3-1.5 1.7-3.6 4-3.7 2.2-.1 4 2.3 4.8 4.1 1.3 2.9-1.5 8.4.9 10.3 4.2 3.3 3-5.5 2.7-6.9-.6-3.9 1-7.2 5.5-5 4.1 2.1 4.3 7.7 4.1 11.6 0 .8-.6 9.5 2.5 5.2 1.2-1.7-.1-7.7.1-9.6.3-2.9 1.2-5.5 4.3-6.2 4.5-1 7.7 1.5 7.4 5.8-.2 3.5-1.8 7.7-.5 11.1 1 2.7 3.6 2.8 5 .2 1.6-3.1 0-8.3-.4-11.6-.4-4.2-.2-7 1.8-10.8 0 0-.1.1-.1.2-.2.4-.3.7-.4.8v.1c-.1.2-.1.2 0 0v-.1l.4-.8c0-.1.1-.1.1-.2.2-.4.5-.8.8-1.2V0H0zM282.7 3.4z" />
+        </svg>
+      </div>
+    )
+  }
+
+  <div
+    class="max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl mx-auto w-full bg-gradient-to-r from-secondary from-10% to-primary to-80% p-10 rounded-4xl"
+  >
+    <div class="flex justify-center">
+      <div class="relative">
+        <div class="flex items-center gap-x-5 sm:gap-x-10 xl:gap-x-20">
+          <div class="relative">
+            <img
+              class="animate-swing-drop-in h-36 lg:h-52 object-contain"
+              src="/img/logo.webp"
+              alt="logo jardín"
+            />
+          </div>
+          <div class="w-full lg:w-3/4">
+            <h2
+              class="animate-fade-in-up text-white text-4xl sm:text-5xl xl:text-6xl mt-2 md:mt-20 font-rakkas"
+            >
+              HOWARD GARDNER
+            </h2>
+          </div>
+        </div>
+
+        <div
+          class="animateSlideInRight absolute block w-full mt-[360px] sm:mt-72 md:mt-96 2xl:mt-80"
+        >
+          <img
+            class="z-30 -ml-16 2xl:-ml-20 -mb-2.5 h-32 md:h-28 lg:h-40 2xl:h-48 object-cover mt-7 absolute bottom-0"
+            src="/img/fotoScottCalltoaction.webp"
+            alt="imagen de scott"
+          />
+          <img
+            class="-mb-2.5 -ml-16 2xl:-ml-20 h-36 md:h-32 lg:h-44 2xl:h-52 absolute bottom-0"
+            src="/img/Vector naranja claro.png"
+            alt="vector naranja"
+          />
+        </div>
+
+        <div class="text-center">
+          <h3
+            class="animate-fade-in-up text-3xl xl:text-5xl mt-2 xl:mt-7 bg-clip-text text-transparent bg-gradient-to-r from-[#38c1c8] from-37% via-[#f29f66] via-61% to-[#f3752b] max-w-xl mx-auto font-rakkas"
+          >
+            ¡Aprender es una Aventura!
+          </h3>
+          <p
+            class="animate-fade-in-up text-lg w-full 2xl:w-3/5 mx-auto my-3 xl:my-5 text-[#ada7a7]"
+          >
+            HOWARD GARDNER es un entorno educativo donde la mayoría los niños
+            participan en experiencias de aprendizaje a traves del juego.
+          </p>
+
+          <div class="w-full flex justify-center">
+            <Button text="Admiciones" url="/admiciones" />
+          </div>
+        </div>
+      </div>
+
+      <img
+        class="animate-zoom-in hidden md:block h-96 lg:h-[500px] mt-14 lg:mt-0 object-contain drop-shadow-2xl"
+        src="/img/fotoSullivanMike.webp"
+        alt="imagen de sullivan y wazowski"
+      />
+    </div>
+  </div>
+
+  {
+    !noGotas && (
+      <div class="absolute left-1/2 -translate-x-1/2 bottom-0 w-full h-[100px]">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="100%"
+          viewBox="0 0 283.5 27.8"
+          preserveAspectRatio="xMidYMax slice"
+          class="fill-white z-30 w-full rotate-180"
+        >
+          <path d="M0 0v1.4c.6.7 1.1 1.4 1.4 2 2 3.8 2.2 6.6 1.8 10.8-.3 3.3-2.4 9.4 0 12.3 1.7 2 3.7 1.4 4.6-.9 1.4-3.8-.7-8.2-.6-12 .1-3.7 3.2-5.5 6.9-4.9 4 .6 4.8 4 4.9 7.4.1 1.8-1.1 7 0 8.5.6.8 1.6 1.2 2.4.5 1.4-1.1.1-5.4.1-6.9.1-3.7.3-8.6 4.1-10.5 5-2.5 6.2 1.6 5.4 5.6-.4 1.7-1 9.2 2.9 6.3 1.5-1.1.7-3.5.5-4.9-.4-2.4-.4-4.3 1-6.5.9-1.4 2.4-3.1 4.2-3 2.4.1 2.7 2.2 4 3.7 1.5 1.8 1.8 2.2 3 .1 1.1-1.9 1.2-2.8 3.6-3.3 1.3-.3 4.8-1.4 5.9-.5 1.5 1.1.6 2.8.4 4.3-.2 1.1-.6 4 1.8 3.4 1.7-.4-.3-4.1.6-5.6 1.3-2.2 5.8-1.4 7 .5 1.3 2.1.5 5.8.1 8.1s-1.2 5-.6 7.4c1.3 5.1 4.4.9 4.3-2.4-.1-4.4-2-8.8-.5-13 .9-2.4 4.6-6.6 7.7-4.5 2.7 1.8.5 7.8.2 10.3-.2 1.7-.8 4.6.2 6.2.9 1.4 2 1.5 2.6-.3.5-1.5-.9-4.5-1-6.1-.2-1.7-.4-3.7.2-5.4 1.8-5.6 3.5 2.4 6.3.6 1.4-.9 4.3-9.4 6.1-3.1.6 2.2-1.3 7.8.7 8.9 4.2 2.3 1.5-7.1 2.2-8 3.1-4 4.7 3.8 6.1 4.1 3.1.7 2.8-7.9 8.1-4.5 1.7 1.1 2.9 3.3 3.2 5.2.4 2.2-1 4.5-.6 6.6 1 4.3 4.4 1.5 4.4-1.7 0-2.7-3-8.3 1.4-9.1 4.4-.9 7.3 3.5 7.8 6.9.3 2-1.5 10.9 1.3 11.3 4.1.6-3.2-15.7 4.8-15.8 4.7-.1 2.8 4.1 3.9 6.6 1 2.4 2.1 1 2.3-.8.3-1.9-.9-3.2 1.3-4.3 5.9-2.9 5.9 5.4 5.5 8.5-.3 2-1.7 8.4 2 8.1 6.9-.5-2.8-16.9 4.8-18.7 4.7-1.2 6.1 3.6 6.3 7.1.1 1.7-1.2 8.1.6 9.1 3.5 2 1.9-7 2-8.4.2-4 1.2-9.6 6.4-9.8 4.7-.2 3.2 4.6 2.7 7.5-.4 2.2 1.3 8.6 3.8 4.4 1.1-1.9-.3-4.1-.3-6 0-1.7.4-3.2 1.3-4.6 1-1.6 2.9-3.5 5.1-2.9 2.5.6 2.3 4.1 4.1 4.9 1.9.8 1.6-.9 2.3-2.1 1.2-2.1 2.1-2.1 4.4-2.4 1.4-.2 3.6-1.5 4.9-.5 2.3 1.7-.7 4.4.1 6.5.6 1.5 2.1 1.7 2.8.3.7-1.4-1.1-3.4-.3-4.8 1.4-2.5 6.2-1.2 7.2 1 2.3 4.8-3.3 12-.2 16.3 3 4.1 3.9-2.8 3.8-4.8-.4-4.3-2.1-8.9 0-13.1 1.3-2.5 5.9-5.7 7.9-2.4 2 3.2-1.3 9.8-.8 13.4.5 4.4 3.5 3.3 2.7-.8-.4-1.9-2.4-10 .6-11.1 3.7-1.4 2.8 7.2 6.5.4 2.2-4.1 4.9-3.1 5.2 1.2.1 1.5-.6 3.1-.4 4.6.2 1.9 1.8 3.7 3.3 1.3 1-1.6-2.6-10.4 2.9-7.3 2.6 1.5 1.6 6.5 4.8 2.7 1.3-1.5 1.7-3.6 4-3.7 2.2-.1 4 2.3 4.8 4.1 1.3 2.9-1.5 8.4.9 10.3 4.2 3.3 3-5.5 2.7-6.9-.6-3.9 1-7.2 5.5-5 4.1 2.1 4.3 7.7 4.1 11.6 0 .8-.6 9.5 2.5 5.2 1.2-1.7-.1-7.7.1-9.6.3-2.9 1.2-5.5 4.3-6.2 4.5-1 7.7 1.5 7.4 5.8-.2 3.5-1.8 7.7-.5 11.1 1 2.7 3.6 2.8 5 .2 1.6-3.1 0-8.3-.4-11.6-.4-4.2-.2-7 1.8-10.8 0 0-.1.1-.1.2-.2.4-.3.7-.4.8v.1c-.1.2-.1.2 0 0v-.1l.4-.8c0-.1.1-.1.1-.2.2-.4.5-.8.8-1.2V0H0zM282.7 3.4z" />
+        </svg>
+      </div>
+    )
+  }
+</section>
+
+<style>
+  .animateSlideInRight {
+    opacity: 0;
+  }
+  .animateSlideInRight.play {
+    animation: animateSlideInRight 1.5s ease-in forwards;
+  }
+
+  .animate-swing-drop-in {
+    animation-play-state: paused;
+  }
+  .animate-swing-drop-in.play {
+    animation-play-state: running;
+    animation-delay: 1s;
+    animation-duration: 500ms;
+  }
+
+  .animate-fade-in-up {
+    animation-play-state: paused;
+  }
+  .animate-fade-in-up.play {
+    animation-play-state: running;
+    animation-duration: 1.5s;
+  }
+
+  .animate-zoom-in {
+    animation-play-state: paused;
+  }
+  .animate-zoom-in.play {
+    animation-play-state: running;
+    animation-duration: 2s;
+    animation-delay: 750ms;
+  }
+</style>
+
+<script>
+  import { observer } from "@/utils/observer";
+
+  document
+    .querySelectorAll(".animate-fade-in-up")
+    .forEach((el) => observer.observe(el));
+
+  document
+    .querySelectorAll(".animateSlideInRight")
+    .forEach((el) => observer.observe(el));
+
+  document
+    .querySelectorAll(".animate-swing-drop-in")
+    .forEach((el) => observer.observe(el));
+
+  document
+    .querySelectorAll(".animate-zoom-in")
+    .forEach((el) => observer.observe(el));
+</script>

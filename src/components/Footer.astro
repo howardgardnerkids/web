@@ -1,0 +1,130 @@
+<footer
+  class="relative bg-[url('img/bg-footer.webp')] bg-cover bg-no-repeat bg-top z-10 xl:h-[600px]"
+>
+  <div
+    class="max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl mx-auto w-full"
+  >
+    <div class="flex flex-col md:flex-row lg:gap-4 justify-center items-center">
+      <div class="w-full md:w-1/2 lg:w-1/3 text-center py-2 sm:py-8 lg:px-14">
+        <img
+          class="animate-swing-drop-in h-28 sm:h-36 t-12 object-contain w-full"
+          src="/img/logo.webp"
+          alt="logo jardín infantil"
+        />
+        <h2
+          class="text-center text-xl md:text-2xl xl:text-3xl text-secondary my-2 mx-auto font-rakkas"
+        >
+          HOWARD GARDNER
+        </h2>
+        <p
+          class="text-center text-lg md:text-md lg:text-lg xl:text-xl w-full my-2"
+        >
+          Es un jardín de educación infantil
+        </p>
+
+        <div class="flex justify-center gap-3 items-center mt-2">
+          <a target="_blank" href="https://www.facebook.com/?locale=es_LA">
+            <img src="/img/Icono Facebook.png" alt="icono facebook" />
+          </a>
+          <a target="_blank" href="#">
+            <img src="/img/Icono Whatsapp.png" alt="icono whatsApp" />
+          </a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=kWEOfBS_mFQ">
+            <img src="/img/Icono Youtube.png" alt="icono youtube" />
+          </a>
+          <a target="_blank" href="#">
+            <img src="/img/Icono Email.png" alt="icono email" />
+          </a>
+        </div>
+      </div>
+
+      <div
+        class="animate-fade-in-up w-auto md:w-1/2 lg:w-1/3 lg:py-8 px-6 2xl:px-14 bg-gray/50 rounded-3xl h-60 lg:h-80 xl:h-[420px] mt-6 lg:mt-12"
+      >
+        <h2
+          class="text-xl lg:text-2xl xl:text-3xl text-secondary mx-auto font-rakkas"
+        >
+          Contactanos
+        </h2>
+
+        <h3
+          class="text-md lg:text-xl font-bold my-2 lg:mb-2 lg:mt-2 xl:mb-5 xl:mt-5"
+        >
+          Dirección
+        </h3>
+        <p class="text-md xl:text-xl w-full">
+          Carrera 80 #7A-98, Barrio Castilla
+        </p>
+
+        <h3
+          class="text-md lg:text-xl font-bold my-2 lg:mb-2 lg:mt-2 xl:mb-5 xl:mt-5"
+        >
+          Telefono
+        </h3>
+        <p class="text-md xl:text-xl w-full">3134501793</p>
+
+        <h3
+          class="text-md lg:text-xl font-bold my-2 lg:mb-2 lg:mt-2 xl:mb-5 xl:mt-5"
+        >
+          Correo Electronico
+        </h3>
+        <p class="text-md xl:text-xl w-full">howardgardnerkids@gmail.com</p>
+      </div>
+
+      <div
+        class="animate-fade-in-up w-1/3 pt-12 xl:py-8 px-4 2xl:px-14 hidden lg:block"
+      >
+        <a
+          target="_blank"
+          href="https://www.google.com/maps/place/Kindergarten+Howard+Gardner+Kids/@4.6389792,-74.1490124,17z/data=!3m1!4b1!4m6!3m5!1s0x8e3f9df2fb83358d:0x47fd565ddd96cadd!8m2!3d4.6389739!4d-74.1464375!16s%2Fg%2F11lv53_g47?entry=ttu&g_ep=EgoyMDI1MDQwNy4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"
+          ><img
+            class="h-62 w-full rounded-3xl object-cover"
+            src="/img/map.webp"
+            alt="mapa"
+          /></a
+        >
+      </div>
+    </div>
+  </div>
+  <div
+    class="flex gap-2.5 py-4 xl:pt-12 text-white justify-center items-center"
+  >
+    <p class="text-white">Diseñado por Daniela Ramirez. Contactame</p>
+    <a target="_blank" href="https://www.facebook.com/?locale=es_LA">
+      <img src="/img/Icono Facebook.png" alt="icono facebook" />
+    </a>
+    <a target="_blank" href="#">
+      <img src="/img/Icono Whatsapp.png" alt="icono whatsApp" />
+    </a>
+  </div>
+</footer>
+
+<style>
+  .animate-swing-drop-in {
+    animation-play-state: paused;
+  }
+  .animate-swing-drop-in.play {
+    animation-play-state: running;
+    animation-duration: 1s;
+  }
+
+  .animate-fade-in-up {
+    animation-play-state: paused;
+  }
+  .animate-fade-in-up.play {
+    animation-play-state: running;
+    animation-duration: 1.5s;
+  }
+</style>
+
+<script>
+  import { observer } from "@/utils/observer";
+
+  document
+    .querySelectorAll(".animate-fade-in-up")
+    .forEach((el) => observer.observe(el));
+
+  document
+    .querySelectorAll(".animate-swing-drop-in")
+    .forEach((el) => observer.observe(el));
+</script>

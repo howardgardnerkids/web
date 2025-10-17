@@ -1,0 +1,57 @@
+---
+const { text, url } = Astro.props;
+---
+
+<a
+  href={url}
+  class="animate-fade-in-up relative overflow-hidden rounded-[10px] border-b-[3px] border-accent z-[1] inline-block bg-transparent transition-all duration-300 ease-[cubic-bezier(0.785,0.135,0.15,0.86)] text-white font-semibold px-6 py-3"
+>
+  {text}
+  <span
+    class="blob-dl-btn__inner absolute left-0 top-0 w-full h-full rounded-[2px] bg-accent-700 transition-all duration-300 ease-[cubic-bezier(0.785,0.135,0.15,0.86)] -z-10 overflow-hidden"
+  >
+    <span class="blob-dl-btn__blobs relative block h-full">
+      <span
+        class="absolute top-[2px] left-[0%] w-1/4 h-full rounded-full bg-accent transform translate-y-[150%] scale-[1.7] transition-transform duration-[750ms] delay-[0s]"
+      ></span>
+      <span
+        class="absolute top-[2px] left-[30%] w-1/4 h-full rounded-full bg-accent transform translate-y-[150%] scale-[1.7] transition-transform duration-[750ms] delay-[80ms]"
+      ></span>
+      <span
+        class="absolute top-[2px] left-[60%] w-1/4 h-full rounded-full bg-accent transform translate-y-[150%] scale-[1.7] transition-transform duration-[750ms] delay-[160ms]"
+      ></span>
+      <span
+        class="absolute top-[2px] left-[90%] w-1/4 h-full rounded-full bg-accent transform translate-y-[150%] scale-[1.7] transition-transform duration-[750ms] delay-[240ms]"
+      ></span>
+    </span>
+  </span>
+</a>
+
+<style>
+  a.relative::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+
+  a:hover .blob-dl-btn__blobs span {
+    transform: translateY(-40%) scale(1.7);
+  }
+
+  .animate-fade-in-up {
+    animation-play-state: paused;
+  }
+  .animate-fade-in-up.play {
+    animation-play-state: running;
+    animation-duration: 1.5s;
+  }
+</style>
+
+<script>
+  import { observer } from "@/utils/observer";
+
+  document
+    .querySelectorAll(".animate-fade-in-up")
+    .forEach((el) => observer.observe(el));
+</script>
