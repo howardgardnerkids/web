@@ -24,7 +24,7 @@ const profesoresSecundarios = profesores.filter(
   class="bg-gray max-w-6xl 2xl:max-w-[1350px] mx-auto w-full my-28 lg:rounded-4xl shadow-2xl overflow-hidden relative"
 >
   <div
-    class="w-full h-full inset-0 bg-[url('img/bg-figuras.webp')] bg-contain mx-auto"
+    class="w-full h-full inset-0 bg-[url('/img/bg-figuras.webp')] bg-contain mx-auto"
   >
     <div class="animate-fade-in-up hidden xl:grid grid-cols-4">
       {
@@ -58,7 +58,9 @@ const profesoresSecundarios = profesores.filter(
 <section
   class="bg-gray max-w-6xl 2xl:max-w-[1350px] mx-auto w-full my-28 rounded-4xl shadow-2xl overflow-hidden relative"
 >
-  <div class="w-full h-full inset-0 bg-[url('img/bg-figuras.webp')] bg-contain">
+  <div
+    class="w-full h-full inset-0 bg-[url('/img/bg-figuras.webp')] bg-contain"
+  >
     <div class="animate-fade-in-up hidden xl:grid grid-cols-4">
       {
         profesoresSecundarios.map((profesor) => (

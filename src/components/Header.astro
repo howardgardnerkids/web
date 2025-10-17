@@ -4,7 +4,7 @@ import Button from "@/components/Button.astro";
 ---
 
 <header
-  class="relative bg-primary-300 bg-[url('img/bg-figuras.webp')] bg-repeat bg-contain h-[740px] overflow-hidden"
+  class="relative bg-primary-300 bg-[url('/img/bg-figuras.webp')] bg-repeat bg-contain h-[740px] overflow-hidden"
 >
   <Menu />
 
@@ -13,7 +13,7 @@ import Button from "@/components/Button.astro";
   >
   </div>
   <img
-    src="img/nubes_verdes.png"
+    src="/img/nubes_verdes.png"
     alt="nubes verdes"
     class="absolute bottom-0 w-full"
   />
@@ -46,12 +46,12 @@ import Button from "@/components/Button.astro";
 
     <div class="hidden md:block">
       <img
-        src="img/vector-home.webp"
+        src="/img/vector-home.webp"
         alt="fondo naranja"
         class="rotate180 absolute md:h-[310px] lg:h-[420px] xl:h-[480px]"
       />
       <img
-        src="img/fotoHeaderMonsterin.webp"
+        src="/img/fotoHeaderMonsterin.webp"
         alt="monster header"
         class="animate-fade-in-up monster absolute md:h-[320px] lg:h-[420px] xl:h-[480px] z-10"
       />
@@ -62,7 +62,7 @@ import Button from "@/components/Button.astro";
 <style>
   .bg-scroll {
     width: 100vw;
-    background: url("img/nubes_blancas_largas.png") repeat-x;
+    background: url("/img/nubes_blancas_largas.png") repeat-x;
     background-size: cover;
     animation: move-bg 130s linear infinite;
   }
