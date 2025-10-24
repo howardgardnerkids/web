@@ -1,42 +1,42 @@
 export const niveles = [
   {
-    img: "/img/parvulos.webp",
+    img: "/img/niveles/parvulosHorizontal.webp",
     title: "Párvulos",
     description1:
       "Desarrollo de habilidades básicas de socialización, comunicación y motricidad a través del juego y actividades sensoriales.",
     description2: "2-3 Años",
     bg1: "fill-primary-300",
     bg2: "fill-primary",
-    icon1: "/img/parvulosIcon.png",
+    icon1: "/img/icon/parvulosIcon.webp",
   },
   {
-    img: "/img/preJardin.webp",
+    img: "/img/niveles/preJardinHorizontal.webp",
     title: "Pre Jardín",
     description1:
       "Fortalecimiento de la autonomía, el lenguaje y la exploración del entorno mediante experiencias lúdicas y pedagógicas.",
     description2: "3-4 Años",
     bg1: "fill-secondary-300",
     bg2: "fill-secondary",
-    icon1: "/img/preJardinIcon.png",
+    icon1: "/img/icon/preJardinIcon.webp",
   },
   {
-    img: "/img/Jardin.webp",
+    img: "/img/niveles/jardinHorizontal.webp",
     title: "Jardín",
     description1:
       "Estímulo de la creatividad, la expresión y el desarrollo cognitivo, preparando a los niños para mayores retos académicos.",
     description2: "4-5 Años",
     bg1: "fill-accent-300",
     bg2: "fill-accent",
-    icon1: "/img/JardinIcon.png",
+    icon1: "/img/icon/JardinIcon.webp",
   },
   {
-    img: "/img/jardinAvanzado.webp",
+    img: "/img/niveles/jardinAvanzadoHorizontal.webp",
     title: "Jardín Avanzado",
     description1:
       "Consolidación en lectura, escritura, matemáticas y habilidades socioemocionales para primaria.",
     description2: "5 Años",
     bg1: "fill-gray",
     bg2: "fill-gray-400",
-    icon1: "/img/JardinAvanzadoIcon.png",
+    icon1: "/img/icon/JardinAvanzadoIcon.webp",
   },
 ];

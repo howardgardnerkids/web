@@ -43,17 +43,17 @@ const Carrusel = () => {
           return (
             <SwiperSlide key={index} className="w-full h-full">
               <div
-                className={`relative bg-no-repeat bg-contain bg-center h-96 w-[400px] flex justify-center flex-col mx-auto`}
+                className={`relative bg-no-repeat bg-contain bg-center size-[350px] sm:size-[500px] lg:size-[450px] xl:size-[500px] 2xl:size-[550px] flex justify-center flex-col mx-auto`}
                 style={{
                   backgroundImage: `url(${testimonio.bg})`,
                 }}
               >
                 <img
-                  className="h-24 md:h-28 lg:h-32 absolute top-4 md:top-0 left-9 md:left-5 object-contain"
+                  className="size-24 sm:size-32 absolute top-0 sm:top-6 lg:top-0 2xl:top-6 left-5 sm:left-10 object-cover rounded-full shadow-lg"
                   src={testimonio.img}
                   alt={testimonio.titleFather}
                 />
-                <div className="w-35 ml-30">
+                <div className="w-52 ml-26">
                   <h2 className="text-accent-700 text-lg font-bold">
                     {testimonio.NameFather}
                   </h2>
@@ -61,9 +61,18 @@ const Carrusel = () => {
                     {testimonio.titleFather}
                   </h3>
                 </div>
-                <p className="text-sm xl:text-base w-7/12 mx-auto my-3 xl:my-2 text-letter">
+                <div
+                  style={{
+                    display: "-webkit-box",
+                    WebkitLineClamp: 6, // número de líneas visibles
+                    WebkitBoxOrient: "vertical",
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                  }}
+                  className="text-sm xl:text-base w-6/12 sm:w-7/12 mx-auto my-3 xl:my-2 text-letter"
+                >
                   {testimonio.text}
-                </p>
+                </div>
               </div>
             </SwiperSlide>
           );

@@ -54,7 +54,7 @@ const Carrusel = () => {
                   />
                 </div>
                 <div className="flex justify-center">
-                  <div className="relative -mt-28 mx-5 pb-10 px-8 rounded-2xl w-4/5 h-[350px] sm:h-[400px] md:h-[350px] z-10 bg-[url('/img/service-bg.png')] bg-cover bg-top bg-no-repeat drop-shadow-xl">
+                  <div className="relative -mt-28 mx-5 pb-10 px-8 rounded-2xl w-4/5 h-[350px] sm:h-[400px] md:h-[350px] z-10 bg-[url('/img/bg/serviceBg.webp')] bg-cover bg-top bg-no-repeat drop-shadow-xl">
                     <div
                       className={`absolute -top-2 sm:-top-5 md:-top-6 lg:-top-3 left-1/2 -translate-x-1/2 border-none rounded-full p-2`}
                     >

@@ -83,9 +83,20 @@ export const profesores = [
     title: "Natali Mendez",
     subtitle: "10 años de experiencia",
     description1:
-      "La profesora de Ballet guía a los niños con dulzura y dedicación en el descubrimiento de la danza, brindándoles un espacio lleno de armonía, belleza y disciplina. Cada clase se convierte en una experiencia lúdica donde los pequeños aprenden a expresarse con su cuerpo, fortaleciendo la postura, la coordinación y la seguridad personal.",
+      "Nuestro profesor guía a los niños en el aprendizaje del Taekwondo a través del juego y la disciplina, fomentando valores como el respeto, la concentración y la confianza en sí mismos",
     description2:
       "Con ternura y paciencia, acompaña cada paso y cada movimiento, celebrando los logros y transmitiendo el amor por la danza.",
+    principal: false,
+  },
+  {
+    img: "/img/profesores/teokondo.webp",
+    titlePp: "Profesora de Teokondo",
+    title: "Maria Ramirez",
+    subtitle: "12 años de experiencia",
+    description1:
+      "Nuestra instructora guía a los niños en el aprendizaje del Taekwondo a través del juego y la disciplina, fomentando valores como el respeto, la concentración y la confianza en sí mismos, combina ejercicios físicos, juegos y técnicas básicas del Taekwondo.",
+    description2:
+      "A través del Taekwondo, los niños aprenden a canalizar su energía, desarrollar autocontrol y fortalecer su autoestima mientras se divierten y aprenden trabajo en equipo.",
     principal: false,
   },
 ];

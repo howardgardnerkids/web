@@ -2,9 +2,11 @@
 const { title, description, img, icon1, icon2, descp2, bg1, bg2 } = Astro.props;
 ---
 
-<article class="h-[450px] w-[280px] mx-auto group">
+<article
+  class="h-[600px] w-[350px] md:w-[450px] lg:w-[350px] xl:w-[400px] 2xl:w-[450px] mx-auto group"
+>
   <div class="relative h-full w-full">
-    <div class="h-[250px] rounded-2xl overflow-hidden shadow-2xl">
+    <div class="h-[400px] rounded-2xl overflow-hidden shadow-2xl">
       <img
         src={img}
         alt={title}
@@ -12,7 +14,7 @@ const { title, description, img, icon1, icon2, descp2, bg1, bg2 } = Astro.props;
       />
     </div>
     <div
-      class="pt-7 pb-0 px-10 w-11/12 mx-auto -mt-36 relative flex flex-col justify-center items-center text-center z-10 h-[270px]"
+      class="pt-7 pb-0 px-10 w-[320px] mx-auto -mt-36 relative flex flex-col justify-center items-center text-center z-10 h-[270px]"
     >
       <svg
         class="w-full absolute left-1/2 top-1/2 -translate-1/2 -z-10 group-hover:-rotate-3 transition-transform duration-300 ease-in-out"
@@ -35,7 +37,7 @@ const { title, description, img, icon1, icon2, descp2, bg1, bg2 } = Astro.props;
         ></svg
       >
       <div
-        class="inline-block text-white py-1 px-6 absolute top-2.5 left-1/2 z-10 -translate-x-1/2"
+        class="inline-block text-white py-1 px-6 absolute top-0 left-1/2 z-10 -translate-x-1/2"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +57,7 @@ const { title, description, img, icon1, icon2, descp2, bg1, bg2 } = Astro.props;
       <img
         src={`${icon1}`}
         alt="Icono del nivel"
-        class="absolute h-20 w-20 -bottom-8 left-1/2 -translate-x-1/2 -traslate-y-1/2 -z-10 group-hover:animate-jelly"
+        class="absolute size-28 -bottom-16 left-1/2 -translate-x-1/2 -traslate-y-1/2 -z-10 group-hover:animate-jelly"
       />
 
       <h3 class="text-2xl font-bold text-letter mb-4 w-4/5">{title}</h3>

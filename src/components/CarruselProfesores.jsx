@@ -48,12 +48,12 @@ const Carrusel = () => {
               <div className="relative bg-primary rounded-3xl h-[450px] w-72 mx-auto my-5 overflow-hidden text-center group">
                 <img
                   className="absolute -top-36 -left-36 -translate-x-36 -translate-y-36 transition-all delay-150 duration-300 ease-in-out group-hover:translate-x-0 group-hover:translate-y-0"
-                  src="/img/vector-home2.png"
+                  src="/img/blob/vectorHomeDos.png"
                   alt="vector naranja"
                 ></img>
                 <img
                   className="absolute bottom-8 -right-24 translate-x-36 translate-y-36 transition-all delay-150 duration-300 ease-in-out group-hover:translate-x-0 group-hover:translate-y-0"
-                  src="/img/vector-home2.png"
+                  src="/img/blob/vectorHomeDos.png"
                   alt="vector naranja"
                 ></img>
                 <img
@@ -61,7 +61,7 @@ const Carrusel = () => {
                   src={profesor.img}
                   alt={profesor.titlePp}
                 />
-                <div className="absolute h-[220px] px-7 w-full bottom-0 rounded-b-3xl flex flex-col justify-center items-center bg-[url('/img/service-bg.png')] bg-cover bg-top bg-no-repeat">
+                <div className="absolute h-[220px] px-7 w-full bottom-0 rounded-b-3xl flex flex-col justify-center items-center bg-[url('/img/bg/serviceBg.webp')] bg-cover bg-top bg-no-repeat">
                   <h3 className="text-3xl mb-2.5">{profesor.titlePp}</h3>
                   <p className="text-accent-700 text-2xl">{profesor.title}</p>
                 </div>

@@ -54,6 +54,9 @@ const Carrusel: React.FC<CaruselProps> = ({ principal }) => {
           1024: {
             slidesPerView: 3,
           },
+          1280: {
+            slidesPerView: 4,
+          },
         }}
       >
         {dataProfesor.map((profesor, index) => {
@@ -64,7 +67,7 @@ const Carrusel: React.FC<CaruselProps> = ({ principal }) => {
                   <img
                     src={profesor.img}
                     alt="foto profesora artes"
-                    className="absolute w-full h-[250px] object-top my-1 object-contain"
+                    className="absolute w-full h-[250px] object-top my-1 md:my-3 object-contain"
                   />
                 </div>
                 <div

@@ -2,6 +2,8 @@
 import "@/styles/global.css";
 import "@fontsource/rakkas";
 import "@fontsource-variable/inter";
+import ButtonAlFinal from "@/components/ButtonAlFinal.astro";
+import ButtonWhatsApp from "@/components/ButtonWhatsApp.astro";
 
 const { title, description } = Astro.props;
 ---
@@ -17,6 +19,8 @@ const { title, description } = Astro.props;
   </head>
   <body>
     <slot />
+    <ButtonAlFinal />
+    <ButtonWhatsApp />
   </body>
 </html>
 

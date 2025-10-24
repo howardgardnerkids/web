@@ -12,8 +12,8 @@ import { Pagination, Navigation } from "swiper/modules";
 
 const data = [
   {
-    photoH: "/img/colegio.webp",
-    photoV: "/img/colegio.webp",
+    photoV: "/img/instalaciones/fachadaInteriorVertical.webp",
+    photoH: "/img/instalaciones/fachadaInternaHorizontal.webp",
     title: "Nuestra Misión",
     subtitle: "¡Educar con amor!",
     desc1:
@@ -21,13 +21,13 @@ const data = [
     desc2:
       "Para el 2026 el jardín infantil HOWARD GARDNER busca mantener y mejorar el reconocimiento como uno de los mejores jerdínes de Bogotá, altamente calificados para el mejor desarrollo y la mejor formación integral en los niños, con calor humano, responsabilidad e innovación.",
     lista: [],
-    img1: "/img/booYSolivan.png",
-    img2: "/img/Vector verde.svg",
+    img1: "/img/personajes/booYSolivan.webp",
+    img2: "/img/blob/VectorVerde.png",
     bg: "bg-secondary",
   },
   {
-    photoH: "/img/colegio.webp",
-    photoV: "/img/colegio.webp",
+    photoH: "/img/instalaciones/fachadaExteriorHorizontal.webp",
+    photoV: "/img/instalaciones/fachadaExteriorVertical.webp",
     title: "Nuestra Visión",
     subtitle: "¡Un futuro lleno de sonrizas!",
     desc1:
@@ -35,13 +35,13 @@ const data = [
     desc2:
       "El jardín infantil HOWARD GARDNER tiene como objetivo desarrollar desde el juego y el afecto la formación integral de los niñas para fortalecer su autoestima, cultivar valores, despertar su imaginación y su creatividad a través de ambientes adecuados que brinden seguridad para aprender, tomar desiciones y enfrentarse a los cambios de su entorno social.",
     lista: [],
-    img1: "/img/booYSolivan.png",
-    img2: "/img/Vector-Boo.svg",
+    img1: "/img/personajes/booYSolivan.webp",
+    img2: "/img/blob/vectorNaranjaOscuro.png",
     bg: "bg-primary",
   },
   {
-    photoH: "/img/colegio.webp",
-    photoV: "/img/colegio.webp",
+    photoH: "/img/instalaciones/piscinaDePelotasHorizontal.webp",
+    photoV: "/img/instalaciones/piscinaPelotasVertical.webp",
     title: "Nuestros Valores",
     subtitle: "¡El corazón de lo que hacemos!",
     desc1:
@@ -54,8 +54,8 @@ const data = [
       "Respeto y valores: Sembramos principios que duran toda la vida",
       "Juego: Nuestra mejor herramienta para aprender y disfrutar",
     ],
-    img1: "/img/booYSolivan.png",
-    img2: "/img/Vector verde.svg",
+    img1: "/img/personajes/booYSolivan.webp",
+    img2: "/img/blob/VectorVerde.png",
     bg: "bg-secondary",
   },
 ];
@@ -85,15 +85,15 @@ const Carrusel = () => {
             <SwiperSlide key={index} className="w-full h-full">
               <div className="grid grid-cols-1 lg:grid-cols-2 w-full 2xl:h-[950px] h-full rounded-4xl shadow-2xl overflow-hidden">
                 <div
-                  className="block lg:hidden w-full h-72 md:h-96 lg:h-full bg-cover"
+                  className="block lg:hidden w-full h-72 md:h-96 lg:h-auto bg-cover"
                   style={{ backgroundImage: `url(${item.photoH})` }}
                 ></div>
                 <div
-                  className="hidden lg:block w-full h-full bg-cover"
+                  className="hidden lg:block w-full h-auto bg-cover xl:bg-[position:center_30%]"
                   style={{ backgroundImage: `url(${item.photoV})` }}
                 ></div>
                 <div
-                  className={`w-full h-[700px] sm:h-[650px] lg:h-[800px] xl:h-[900px] 2xl:h-[950px] flex relative flex-col justify-center items-start bg-[url('/img/pattern.png')] ${item.bg} bg-cover py-10`}
+                  className={`w-full h-[700px] sm:h-[650px] lg:h-[800px] xl:h-[900px] 2xl:h-[950px] flex relative flex-col justify-center items-start bg-[url('/img/bg/pattern.webp')] ${item.bg} bg-cover py-10`}
                 >
                   <div className="w-4/5 lg:w-3/4 xl:w-4/5 mx-auto">
                     <h3 className="w-full my-7 text-3xl xl:text-5xl font-bold text-center xl:text-left uppercase font-rakkas text-white">
