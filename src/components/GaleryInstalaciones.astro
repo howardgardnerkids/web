@@ -1,0 +1,197 @@
+<section
+  class="max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl mx-auto w-full mb-40"
+>
+  <div class="w-full text-center mx-auto mb-20">
+    <h3
+      class="animate-fade-in-up w-full text-4xl md:text-6xl fond-rakkas text-center uppercase font-bold text-accent font-rakkas"
+    >
+      Galeria Jardín
+    </h3>
+  </div>
+
+  <div
+    class="animate-fade-in-up grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 auto-rows-[300px] sm:auto-rows-[200px] lg:auto-rows-[120px] gap-4"
+  >
+    <!-- Imagen 1 -->
+    <div
+      class="sm:col-span-2 sm:row-span-2 lg:col-span-2 lg:row-span-2 cursor-pointer rounded-lg overflow-hidden group"
+    >
+      <img
+        class="openModalImg h-full w-full object-cover group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-300 ease-in-out"
+        src="/img/instalaciones/fachadaInternaHorizontal.webp"
+        alt="Fachada Interna"
+      />
+    </div>
+
+    <!-- Imagen 2 -->
+    <div
+      class="sm:row-span-2 sm:col-span-2 lg:col-span-1 lg:row-span-4 lg:col-start-1 lg:row-start-3 cursor-pointer rounded-lg overflow-hidden group"
+    >
+      <img
+        class="openModalImg h-full w-full object-cover group-hover:scale-110 group-hover:rotate-2 transition-transform duration-300 ease-in-out"
+        src="/img/instalaciones/fachadaExteriorVertical.webp"
+        alt="Fachada Jardín"
+      />
+    </div>
+
+    <!-- Imagen 3 -->
+    <div
+      class="sm:col-span-2 sm:row-span-1 lg:col-span-2 lg:row-span-2 lg:col-start-2 lg:row-start-3 cursor-pointer rounded-lg overflow-hidden group"
+    >
+      <img
+        class="openModalImg h-full w-full object-cover group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-300 ease-in-out"
+        src="/img/instalaciones/comedorHorizontal.webp"
+        alt="Comedor"
+      />
+    </div>
+
+    <!-- Imagen 4 -->
+    <div
+      class="sm:row-span-1 lg:row-span-2 lg:col-start-2 lg:row-start-5 cursor-pointer rounded-lg overflow-hidden group"
+    >
+      <img
+        class="openModalImg h-full w-full object-cover group-hover:scale-110 group-hover:rotate-2 transition-transform duration-300 ease-in-out"
+        src="/img/instalaciones/comedorVertical.webp"
+        alt="Comedor"
+      />
+    </div>
+
+    <!-- Imagen 5 -->
+    <div
+      class="sm:row-span-1 lg:row-span-2 lg:col-start-3 lg:row-start-1 cursor-pointer rounded-lg overflow-hidden group"
+    >
+      <img
+        class="openModalImg h-full w-full object-cover group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-300 ease-in-out"
+        src="/img/instalaciones/fachadaExteriorHorizontal.webp"
+        alt="Fachada Jardín"
+      />
+    </div>
+
+    <!-- Imagen 6 -->
+    <div
+      class="sm:col-span-2 sm:row-span-2 lg:row-span-4 lg:col-start-4 lg:row-start-1 cursor-pointer rounded-lg overflow-hidden group"
+    >
+      <img
+        class="openModalImg h-full w-full object-cover group-hover:scale-110 group-hover:rotate-2 transition-transform duration-300 ease-in-out"
+        src="/img/instalaciones/areaJuegosVertical.webp"
+        alt="Cocina"
+      />
+    </div>
+
+    <!-- Imagen 7 -->
+    <div
+      class="sm:col-span-2 sm:row-span-1 lg:col-span-2 lg:row-span-2 lg:col-start-3 lg:row-start-5 cursor-pointer rounded-lg overflow-hidden group"
+    >
+      <img
+        class="openModalImg h-full w-full object-cover group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-300 ease-in-out"
+        src="/img/instalaciones/piscinaDePelotasHorizontal.webp"
+        alt="Piscina de Pelotas"
+      />
+    </div>
+  </div>
+
+  <dialog
+    id="infoModal"
+    class="fixed inset-0 m-auto rounded-2xl p-0 backdrop:bg-letter/50 overflow-hidden"
+    style="height: 90dvh; width: 60dvw;"
+  >
+    <button
+      id="closePopup"
+      class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 z-30"
+      type="button"
+      aria-label="Cerrar"
+      title="Cerrar"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        class="fill-accent-700 size-12 cursor-pointer"
+        ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+          d="M19 2h-14a3 3 0 0 0 -3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3 -3v-14a3 3 0 0 0 -3 -3zm-9.387 6.21l.094 .083l2.293 2.292l2.293 -2.292a1 1 0 0 1 1.497 1.32l-.083 .094l-2.292 2.293l2.292 2.293a1 1 0 0 1 -1.32 1.497l-.094 -.083l-2.293 -2.292l-2.293 2.292a1 1 0 0 1 -1.497 -1.32l.083 -.094l2.292 -2.293l-2.292 -2.293a1 1 0 0 1 1.32 -1.497z"
+        ></path></svg
+      >
+    </button>
+
+    <h2
+      id="modalTitleNivel"
+      class="w-full text-center mx-auto animate-fade-in-up text-4xl md:text-5xl fond-rakkas uppercase font-bold text-secondary font-rakkas my-12"
+    >
+      parvulos
+    </h2>
+
+    <img
+      id="modalImg"
+      src="/img/niveles.webp"
+      alt="imagen salones"
+      class="object-cover object-center w-full"
+      style="height: calc(100% - 144px);"
+    />
+  </dialog>
+</section>
+
+<script>
+  import { isVerticalImg, getTailwindBreakpoint } from "@/utils/imgs";
+
+  const modal = document.getElementById("infoModal") as HTMLDialogElement;
+  const titleNivel = document.getElementById(
+    "modalTitleNivel"
+  ) as HTMLHeadingElement;
+  const imgEl = document.getElementById("modalImg") as HTMLImageElement;
+  const closeBtn = document.getElementById("closePopup") as HTMLButtonElement;
+
+  const openImgs = document.querySelectorAll<HTMLImageElement>(".openModalImg");
+
+  const breakpoint = getTailwindBreakpoint();
+  console.log(breakpoint);
+
+  openImgs.forEach((img) => {
+    img.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+
+      if (titleNivel) titleNivel.textContent = img.alt ?? "";
+      if (imgEl) imgEl.src = img.src ?? "";
+
+      if (isVerticalImg(img.src)) {
+        switch (breakpoint) {
+          case "xs":
+          case "sm":
+          case "md":
+            modal.style = "height: 90dvh; width: 70dvw;";
+            break;
+          case "lg":
+            modal.style = "height: 90dvh; width: 40dvw;";
+            break;
+          default:
+            modal.style = "height: 90dvh; width: 30dvw;";
+            break;
+        }
+      } else {
+        switch (breakpoint) {
+          case "xs":
+          case "sm":
+          case "md":
+            modal.style = "height: 70dvh; width: 90dvw;";
+            break;
+          case "lg":
+            modal.style = "height: 80dvh; width: 70dvw;";
+            break;
+          default:
+            modal.style = "height: 70dvh; width: 50dvw;";
+            break;
+        }
+      }
+
+      modal.showModal();
+    });
+  });
+
+  closeBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    modal.close();
+  });
+</script>

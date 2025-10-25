@@ -5,11 +5,13 @@ import NosotrosDos from "@/components/NosotrosDos.astro";
 import CarruselMisionYVision from "@/components/CarruselMisionYVision.jsx";
 import CallToAction2 from "@/components/CallToAction2.astro";
 import Footer from "@/components/Footer.astro";
+import GaleryInstalaciones from "@/components/GaleryInstalaciones.astro";
 ---
 
 <Layout
-  title="Howard Gardner | Acerca de nosotros"
-  description="Es un jardín de educación infantil"
+  title="Nosotros - Jardín Infantil Howard Gardner | Quiénes Somos en Bogotá, Castilla"
+  description="En Jardín Infantil Howard Gardner en Bogotá, somos una institución comprometida con el desarrollo integral de los niños a través de la metodología de inteligencias múltiples. Nuestro equipo especializado brinda ambientes seguros, afecto, inclusión y educación con inglés intensivo, apoyo psicológico y nutrición personalizada. Conócenos y acompaña el crecimiento de tu hijo con nosotros."
+  image="/img/instalaciones/comedorHorizontal.webp"
 >
   <HeaderDos
     title="Formamos corazones y mentes felices"
@@ -20,11 +22,10 @@ import Footer from "@/components/Footer.astro";
   />
   <main>
     <NosotrosDos />
-
     <section class="relative w-full max-w-6xl 2xl:max-w-[100rem] mx-auto pb-20">
       <CarruselMisionYVision client:load />
     </section>
-
+    <GaleryInstalaciones />
     <CallToAction2 />
   </main>
 

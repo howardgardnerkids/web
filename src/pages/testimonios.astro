@@ -1,0 +1,175 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import HeaderDos from "@/components/HeaderDos.astro";
+import Footer from "@/components/Footer.astro";
+import { testimonios } from "@/constants/testimonios";
+---
+
+<Layout
+  title="Testimonios - Jardín Infantil Howard Gardner | Opiniones de Padres Felices en Bogotá, Castilla"
+  description="Conoce los testimonios reales de padres que confían en Jardín Infantil Howard Gardner en Bogotá. Historias llenas de amor, gratitud y experiencias positivas sobre nuestro acompañamiento educativo, ambientes seguros y el desarrollo integral de sus hijos. ¡Descubre por qué somos su mejor elección!”"
+>
+  <HeaderDos
+    title="Voces que nacen del corazón"
+    subtitle="Experiencias de familias que han crecido junto a nosotros"
+    description="Cada palabra refleja la confianza y el cariño de las familias que han hecho parte de nuestro jardín. Sus experiencias nos inspiran a seguir acompañando con amor, respeto y dedicación en los pasos de los pequeños."
+    bgimg="/img/bg/headerPrimary.webp"
+    left
+    phone
+  />
+
+  <section
+    class="max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl mx-auto w-full my-20"
+  >
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      {
+        testimonios.map((testimonio) => {
+          return (
+            <article
+              class={`relative bg-gray rounded-xl shadow-lg h-fit lg:h-[550px] xl:h-[530px] pb-20 lg:pb-0`}
+            >
+              <div class="absolute inset-0 h-full w-full bg-[url('/img/bg/fondoFiguras.webp')] bg-contain opacity-50" />
+
+              <div class="flex items-center justify-start w-10/12 mx-auto mb-4 mt-10 gap-6">
+                <img
+                  class="size-36 object-cover object-center rounded-xl shadow-lg"
+                  src={testimonio.img}
+                  alt={testimonio.titleFather}
+                />
+                <div class="pt-6 text-center w-full ">
+                  <h2 class="text-accent-700 text-2xl font-bold">
+                    {testimonio.NameFather}
+                  </h2>
+                  <h3 class="text-lg font-bold text-black mt-1 mb-6">
+                    {testimonio.titleFather}
+                  </h3>
+                </div>
+              </div>
+              <div
+                style="display: -webkit-box; -webkit-line-clamp: 8; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;"
+                class="text-lg w-10/12 mx-auto mb-3 text-letter"
+              >
+                {testimonio.text}
+              </div>
+              <button
+                type="button"
+                aria-label="Leer más"
+                title="Leer más"
+                class="openModalBtn absolute bottom-8 left-12 rounded-xl bg-accent-700 text-white overflow-hidden border-b-[3px] border-accent font-semibold px-6 py-3 shadow-lg z-50 cursor-pointer hover:animate-heartbeat"
+                style="animation-iteration-count: infinite;"
+                data-titlepadre={testimonio.NameFather}
+                data-titlehijo={testimonio.titleFather}
+                data-text={testimonio.text}
+                data-img={testimonio.img}
+              >
+                Leer más
+              </button>
+            </article>
+          );
+        })
+      }
+    </div>
+
+    <dialog
+      id="infoModal"
+      class="fixed inset-0 m-auto rounded-2xl p-0 backdrop:bg-letter/50 overflow-y-hidden"
+      style="height: 70dvh; width: 50dvw;"
+    >
+      <button
+        id="closePopup"
+        class="absolute top-3 right-3 text-gray-500 hover:text-gray-800"
+        type="button"
+        aria-label="Cerrar"
+        title="Cerrar"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="fill-accent-700 size-12 cursor-pointer"
+          ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+            d="M19 2h-14a3 3 0 0 0 -3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3 -3v-14a3 3 0 0 0 -3 -3zm-9.387 6.21l.094 .083l2.293 2.292l2.293 -2.292a1 1 0 0 1 1.497 1.32l-.083 .094l-2.292 2.293l2.292 2.293a1 1 0 0 1 -1.32 1.497l-.094 -.083l-2.293 -2.292l-2.293 2.292a1 1 0 0 1 -1.497 -1.32l.083 -.094l2.292 -2.293l-2.292 -2.293a1 1 0 0 1 1.32 -1.497z"
+          ></path></svg
+        >
+      </button>
+      <div class="flex flex-col-2 gap-5 w-full h-full">
+        <img
+          id="modalImg"
+          src="/img/testimonio.webp"
+          alt="imagen testimonio"
+          class="h-full w-5/12 object-cover"
+        />
+        <div class="pl-5 pr-8 py-10">
+          <h2 id="modalNombrePadre" class="text-accent-700 text-2xl font-bold">
+            padres
+          </h2>
+          <h3
+            id="modalNombreHijo"
+            class="text-lg font-bold text-black mt-1 mb-6"
+          >
+            hijo
+          </h3>
+
+          <div
+            id="modalText"
+            class="text-lg mb-3 text-letter overflow-y-auto h-[52dvh] scroll-smooth pr-2"
+          >
+            text
+          </div>
+        </div>
+      </div>
+    </dialog>
+  </section>
+
+  <Footer />
+</Layout>
+
+<style>
+  #modalText::-webkit-scrollbar {
+    width: 6px;
+  }
+  #modalText::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+    border-radius: 9999px;
+  }
+</style>
+
+<script>
+  const modal = document.getElementById("infoModal") as HTMLDialogElement;
+  const titlePadre = document.getElementById(
+    "modalNombrePadre"
+  ) as HTMLHeadingElement;
+  const titleHijo = document.getElementById(
+    "modalNombreHijo"
+  ) as HTMLHeadingElement;
+  const contentEl = document.getElementById(
+    "modalText"
+  ) as HTMLParagraphElement;
+  const imgEl = document.getElementById("modalImg") as HTMLImageElement;
+  const closeBtn = document.getElementById("closePopup") as HTMLButtonElement;
+
+  const openButtons =
+    document.querySelectorAll<HTMLButtonElement>(".openModalBtn");
+
+  openButtons.forEach((btn) => {
+    btn.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+
+      if (titlePadre) titlePadre.textContent = btn.dataset.titlepadre ?? "";
+      if (titleHijo) titleHijo.textContent = btn.dataset.titlehijo ?? "";
+      if (contentEl) contentEl.textContent = btn.dataset.text ?? "";
+      if (imgEl) imgEl.src = btn.dataset.img ?? "";
+
+      modal.showModal();
+    });
+  });
+
+  closeBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    modal.close();
+  });
+</script>
