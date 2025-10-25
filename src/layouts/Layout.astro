@@ -45,10 +45,12 @@ Astro.response.headers.set(
     {image && <meta name="twitter:image" content={image} />}
   </head>
   <body>
-    <div
+    {
+      /* <div
       class="h-2 w-full bg-red-300 sm:bg-orange-800 md:bg-yellow-500 lg:bg-green-500 xl:bg-blue-500 2xl:bg-black"
     >
-    </div>
+    </div>*/
+    }
     <slot />
     <ButtonAlFinal />
     <ButtonWhatsApp />
