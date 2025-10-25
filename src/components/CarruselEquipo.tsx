@@ -83,10 +83,10 @@ const Carrusel: React.FC<CaruselProps> = ({ principal }) => {
                     <h4 className="text-white/80 text-center text-sm lg:text-base">
                       {profesor.subtitle}
                     </h4>
-                    <p className="text-sm w-9/12 mx-auto text-center my-3">
+                    <p className="text-sm sm:text-base md:text-sm w-9/12 xl:w-11/12 mx-auto text-center my-3">
                       {profesor.description1}
                     </p>
-                    <p className="md:hidden text-sm w-9/12 mx-auto text-center">
+                    <p className="hidden sm:block md:hidden 2xl:block text-sm sm:text-base md:text-sm w-9/12 xl:w-11/12 mx-auto text-center">
                       {profesor.description2}
                     </p>
                   </div>

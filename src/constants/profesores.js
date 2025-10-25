@@ -2,7 +2,7 @@ export const profesores = [
   {
     img: "/img/profesores/parvulos.webp",
     titlePp: "Profesora de Párvulos",
-    title: "Camila Ramirez",
+    title: "Danny Cardozo",
     subtitle: "8 años de experiencia",
     description1:
       "La profesional de párvulos es una guía amoroso y profesional que acompaña a cada niño con ternura y paciencia en sus primeros pasos escolares. Su prioridad es brindar un entorno familiar donde los pequeños se sientan queridos, escuchados y valorados.",
@@ -13,7 +13,7 @@ export const profesores = [
   {
     img: "/img/profesores/preJardin.webp",
     titlePp: "Profesora de Pre-jardín",
-    title: "Carol Medina",
+    title: "Carol Castillo",
     subtitle: "4 años de experiencia",
     description1:
       "La profesional de Pre-Jardín es una acompañante cercano que entiende la importancia de esta etapa de transición, donde los niños comienzan a descubrir con mayor autonomía el mundo que los rodea. Ella crea un ambiente acogedor, donde cada niño se siente confiado para explorar, preguntar y compartir.",
@@ -24,7 +24,7 @@ export const profesores = [
   {
     img: "/img/profesores/jardin.webp",
     titlePp: "Profesora de Jardín",
-    title: "Nury Ramirez",
+    title: "Nury Peña",
     subtitle: "5 años de experiencia",
     description1:
       "La profesional de Jardín acompaña a los niños en una etapa llena de descubrimientos, donde la curiosidad y la imaginación se convierten en herramientas para aprender con alegría. Brinda un entorno seguro y estimulante que motiva a los pequeños a explorar nuevas ideas, sus emociones y fortalecer su autonomía.",
@@ -35,7 +35,7 @@ export const profesores = [
   {
     img: "/img/profesores/jardinAvanzado.webp",
     titlePp: "Profesora de Jardín Avanzado",
-    title: "Natali Mendez",
+    title: "Nury Peña",
     subtitle: "10 años de experiencia",
     description1:
       "La profesional de Jardín Avanzado es una guía de los niños en sus primeros pasos hacia la vida escolar formal. Crea un ambiente acogedor y motivador, donde los pequeños desarrollan sus capacidades cognitivas, sociales y emocionales, preparándose para asumir nuevos retos con seguridad y alegría.",
@@ -47,8 +47,8 @@ export const profesores = [
   {
     img: "/img/profesores/ingles.webp",
     titlePp: "Profesora de Ingles",
-    title: "Camila Ramirez",
-    subtitle: "4 años de experiencia",
+    title: "Valentina Beltrán",
+    subtitle: "9 años de experiencia",
     description1:
       "La profesora de Inglés introduce a los niños en un nuevo idioma de manera natural, divertida y afectuosa, convirtiendo cada clase en una oportunidad para cantar, jugar y descubrir nuevas palabras. Se busca un ambiente de confianza, donde los pequeños se sientan motivados a escuchar, repetir y comunicarse con alegría.",
     description2:
@@ -58,7 +58,7 @@ export const profesores = [
   {
     img: "/img/profesores/artes.webp",
     titlePp: "Profesora de Artes",
-    title: "Carol Medina",
+    title: "Carol Castillo",
     subtitle: "2 años de experiencia",
     description1:
       "La profesora de Artes inspira a los niños a expresar sus emociones y creatividad a través de los colores, las formas y la imaginación. En un ambiente acogedor y alegre, guía a los pequeños en actividades que despiertan su curiosidad, fomentan la confianza en sí mismos y desarrollan la sensibilidad artística desde el juego y la exploración.",
@@ -69,10 +69,10 @@ export const profesores = [
   {
     img: "/img/profesores/futbol.webp",
     titlePp: "Profesora de Futboll",
-    title: "Nury Ramirez",
+    title: "Johanna Ramirez",
     subtitle: "5 años de experiencia",
     description1:
-      "El profesor de Fútbol es un guía cercano que motiva a los niños a descubrir el valor del movimiento, el trabajo en equipo y la disciplina a través del juego. Con energía positiva y paciencia, crea un entorno divertido y seguro, donde los pequeños aprenden a disfrutar del deporte mientras desarrollan coordinación, fuerza y confianza en sí mismos.",
+      "El profesor de Fútbol es un guía cercano que motiva a los niños a descubrir el valor del movimiento, el trabajo en equipo y la disciplina a través del juego. Crea un entorno divertido y seguro, donde los pequeños aprenden a disfrutar del deporte mientras desarrollan coordinación, fuerza y confianza.",
     description2:
       "Más allá de la práctica física, enseña valores como el respeto, la cooperación y la amistad, haciendo de cada entrenamiento una experiencia que fortalece tanto el cuerpo como el corazón.",
     principal: false,
@@ -80,7 +80,7 @@ export const profesores = [
   {
     img: "/img/profesores/ballet.webp",
     titlePp: "Profesora de Balllet",
-    title: "Natali Mendez",
+    title: "Yaira Herrera",
     subtitle: "10 años de experiencia",
     description1:
       "Nuestro profesor guía a los niños en el aprendizaje del Taekwondo a través del juego y la disciplina, fomentando valores como el respeto, la concentración y la confianza en sí mismos",
@@ -91,7 +91,7 @@ export const profesores = [
   {
     img: "/img/profesores/teokondo.webp",
     titlePp: "Profesora de Teokondo",
-    title: "Maria Ramirez",
+    title: "Peter Ramirez",
     subtitle: "12 años de experiencia",
     description1:
       "Nuestra instructora guía a los niños en el aprendizaje del Taekwondo a través del juego y la disciplina, fomentando valores como el respeto, la concentración y la confianza en sí mismos, combina ejercicios físicos, juegos y técnicas básicas del Taekwondo.",

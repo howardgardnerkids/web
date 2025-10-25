@@ -73,6 +73,26 @@ const Carrusel = () => {
                 >
                   {testimonio.text}
                 </div>
+                <a
+                  href="/testimonios"
+                  className="h-12 md:h-10 lg:h-12 xl:h-10 2xl:h-12 w-fit absolute bottom-10 sm:bottom-20 md:bottom-24 lg:bottom-19 xl:bottom-24 left-1/2 -translate-x-1/2 flex items-center justify-center gap-2 drop-shadow-md"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="size-8 md:size-14"
+                    style={{
+                      fill: `var(${testimonio.icon})`,
+                    }}
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M12.4 2l.253 .005a6.34 6.34 0 0 1 5.235 3.166l.089 .163l.178 .039a6.33 6.33 0 0 1 4.254 3.406l.105 .228a6.334 6.334 0 0 1 -5.74 8.865l-.144 -.002l-.037 .052a5.26 5.26 0 0 1 -5.458 1.926l-.186 -.051l-3.435 2.06a1 1 0 0 1 -1.508 -.743l-.006 -.114v-2.435l-.055 -.026a3.67 3.67 0 0 1 -1.554 -1.498l-.102 -.199a3.67 3.67 0 0 1 -.312 -2.14l.038 -.21l-.116 -.092a5.8 5.8 0 0 1 -1.887 -6.025l.071 -.238a5.8 5.8 0 0 1 5.42 -4.004h.157l.15 -.165a6.33 6.33 0 0 1 4.33 -1.963zm1.6 11h-5a1 1 0 0 0 0 2h5a1 1 0 0 0 0 -2m3 -4h-10a1 1 0 1 0 0 2h10a1 1 0 0 0 0 -2" />
+                  </svg>
+                  <span>Leer más</span>
+                </a>
               </div>
             </SwiperSlide>
           );

@@ -83,7 +83,7 @@ const Carrusel = () => {
         {data.map((item, index) => {
           return (
             <SwiperSlide key={index} className="w-full h-full">
-              <div className="grid grid-cols-1 lg:grid-cols-2 w-full 2xl:h-[950px] h-full rounded-4xl shadow-2xl overflow-hidden">
+              <div className="grid grid-cols-1 lg:grid-cols-2 w-full 2xl:h-[950px] h-full xl:rounded-4xl overflow-hidden">
                 <div
                   className="block lg:hidden w-full h-72 md:h-96 lg:h-auto bg-cover"
                   style={{ backgroundImage: `url(${item.photoH})` }}
@@ -93,7 +93,7 @@ const Carrusel = () => {
                   style={{ backgroundImage: `url(${item.photoV})` }}
                 ></div>
                 <div
-                  className={`w-full h-[700px] sm:h-[650px] lg:h-[800px] xl:h-[900px] 2xl:h-[950px] flex relative flex-col justify-center items-start bg-[url('/img/bg/pattern.webp')] ${item.bg} bg-cover py-10`}
+                  className={`w-full h-[760px] sm:h-[650px] lg:h-[800px] xl:h-[900px] 2xl:h-[950px] flex relative flex-col justify-center items-start bg-[url('/img/bg/pattern.webp')] ${item.bg} bg-cover py-10`}
                 >
                   <div className="w-4/5 lg:w-3/4 xl:w-4/5 mx-auto">
                     <h3 className="w-full my-7 text-3xl xl:text-5xl font-bold text-center xl:text-left uppercase font-rakkas text-white">

@@ -145,7 +145,6 @@
   const openImgs = document.querySelectorAll<HTMLImageElement>(".openModalImg");
 
   const breakpoint = getTailwindBreakpoint();
-  console.log(breakpoint);
 
   openImgs.forEach((img) => {
     img.addEventListener("click", (event) => {
@@ -159,11 +158,13 @@
         switch (breakpoint) {
           case "xs":
           case "sm":
+            modal.style = "height: 100dvh; width: 90dvw;";
+            break;
           case "md":
             modal.style = "height: 90dvh; width: 70dvw;";
             break;
           case "lg":
-            modal.style = "height: 90dvh; width: 40dvw;";
+            modal.style = "height: 90dvh; width: 60dvw;";
             break;
           default:
             modal.style = "height: 90dvh; width: 30dvw;";

@@ -19,14 +19,14 @@ import { testimonios } from "@/constants/testimonios";
   />
 
   <section
-    class="max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl mx-auto w-full my-20"
+    class="max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl mx-auto w-full my-20 z-0"
   >
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
       {
         testimonios.map((testimonio) => {
           return (
             <article
-              class={`relative bg-gray rounded-xl shadow-lg h-fit lg:h-[550px] xl:h-[530px] pb-20 lg:pb-0`}
+              class={`relative bg-gray rounded-xl shadow-lg h-fit lg:h-[550px] xl:h-[530px] pb-20 lg:pb-0 z-20`}
             >
               <div class="absolute inset-0 h-full w-full bg-[url('/img/bg/fondoFiguras.webp')] bg-contain opacity-50" />
 
@@ -55,7 +55,7 @@ import { testimonios } from "@/constants/testimonios";
                 type="button"
                 aria-label="Leer más"
                 title="Leer más"
-                class="openModalBtn absolute bottom-8 left-12 rounded-xl bg-accent-700 text-white overflow-hidden border-b-[3px] border-accent font-semibold px-6 py-3 shadow-lg z-50 cursor-pointer hover:animate-heartbeat"
+                class="openModalBtn absolute bottom-8 left-12 rounded-xl bg-accent-700 text-white overflow-hidden border-b-[3px] border-accent font-semibold px-6 py-3 shadow-lg z-40 cursor-pointer hover:animate-heartbeat"
                 style="animation-iteration-count: infinite;"
                 data-titlepadre={testimonio.NameFather}
                 data-titlehijo={testimonio.titleFather}
@@ -69,59 +69,59 @@ import { testimonios } from "@/constants/testimonios";
         })
       }
     </div>
+  </section>
 
-    <dialog
-      id="infoModal"
-      class="fixed inset-0 m-auto rounded-2xl p-0 backdrop:bg-letter/50 overflow-y-hidden"
-      style="height: 70dvh; width: 50dvw;"
+  <dialog
+    id="infoModal"
+    class="fixed inset-0 m-auto rounded-2xl p-0 backdrop:bg-letter/50 overflow-y-hidden"
+    style="height: 70dvh; width: 50dvw;"
+  >
+    <button
+      id="closePopup"
+      class="absolute top-3 right-3 text-gray-500 hover:text-gray-800"
+      type="button"
+      aria-label="Cerrar"
+      title="Cerrar"
     >
-      <button
-        id="closePopup"
-        class="absolute top-3 right-3 text-gray-500 hover:text-gray-800"
-        type="button"
-        aria-label="Cerrar"
-        title="Cerrar"
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        class="fill-accent-700 size-12 cursor-pointer"
+        ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+          d="M19 2h-14a3 3 0 0 0 -3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3 -3v-14a3 3 0 0 0 -3 -3zm-9.387 6.21l.094 .083l2.293 2.292l2.293 -2.292a1 1 0 0 1 1.497 1.32l-.083 .094l-2.292 2.293l2.292 2.293a1 1 0 0 1 -1.32 1.497l-.094 -.083l-2.293 -2.292l-2.293 2.292a1 1 0 0 1 -1.497 -1.32l.083 -.094l2.292 -2.293l-2.292 -2.293a1 1 0 0 1 1.32 -1.497z"
+        ></path></svg
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          class="fill-accent-700 size-12 cursor-pointer"
-          ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
-            d="M19 2h-14a3 3 0 0 0 -3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3 -3v-14a3 3 0 0 0 -3 -3zm-9.387 6.21l.094 .083l2.293 2.292l2.293 -2.292a1 1 0 0 1 1.497 1.32l-.083 .094l-2.292 2.293l2.292 2.293a1 1 0 0 1 -1.32 1.497l-.094 -.083l-2.293 -2.292l-2.293 2.292a1 1 0 0 1 -1.497 -1.32l.083 -.094l2.292 -2.293l-2.292 -2.293a1 1 0 0 1 1.32 -1.497z"
-          ></path></svg
-        >
-      </button>
-      <div class="flex flex-col-2 gap-5 w-full h-full">
-        <img
-          id="modalImg"
-          src="/img/testimonio.webp"
-          alt="imagen testimonio"
-          class="h-full w-5/12 object-cover"
-        />
-        <div class="pl-5 pr-8 py-10">
-          <h2 id="modalNombrePadre" class="text-accent-700 text-2xl font-bold">
-            padres
-          </h2>
-          <h3
-            id="modalNombreHijo"
-            class="text-lg font-bold text-black mt-1 mb-6"
-          >
-            hijo
-          </h3>
+    </button>
 
-          <div
-            id="modalText"
-            class="text-lg mb-3 text-letter overflow-y-auto h-[52dvh] scroll-smooth pr-2"
-          >
-            text
-          </div>
+    <div
+      class="flex flex-col md:flex-row items-center justify-center gap-5 w-full h-full"
+    >
+      <img
+        id="modalImg"
+        src="/img/testimonio.webp"
+        alt="imagen testimonio"
+        class="h-[50%] md:h-full w-full md:w-6/12 object-cover"
+      />
+      <div class="pl-5 pr-8 py-4 md:py-10 h-[50%] md:h-full">
+        <h2 id="modalNombrePadre" class="text-accent-700 text-2xl font-bold">
+          padres
+        </h2>
+        <h3 id="modalNombreHijo" class="text-lg font-bold text-black mt-1 mb-6">
+          hijo
+        </h3>
+
+        <div
+          id="modalText"
+          class="text-lg mb-3 text-letter overflow-y-auto h-[65%] md:h-[80%] scroll-smooth pr-2"
+        >
+          text
         </div>
       </div>
-    </dialog>
-  </section>
+    </div>
+  </dialog>
 
   <Footer />
 </Layout>
@@ -137,6 +137,7 @@ import { testimonios } from "@/constants/testimonios";
 </style>
 
 <script>
+  import { getTailwindBreakpoint } from "@/utils/imgs";
   const modal = document.getElementById("infoModal") as HTMLDialogElement;
   const titlePadre = document.getElementById(
     "modalNombrePadre"
@@ -153,6 +154,8 @@ import { testimonios } from "@/constants/testimonios";
   const openButtons =
     document.querySelectorAll<HTMLButtonElement>(".openModalBtn");
 
+  const breakpoint = getTailwindBreakpoint();
+
   openButtons.forEach((btn) => {
     btn.addEventListener("click", (event) => {
       event.preventDefault();
@@ -162,6 +165,21 @@ import { testimonios } from "@/constants/testimonios";
       if (titleHijo) titleHijo.textContent = btn.dataset.titlehijo ?? "";
       if (contentEl) contentEl.textContent = btn.dataset.text ?? "";
       if (imgEl) imgEl.src = btn.dataset.img ?? "";
+
+      switch (breakpoint) {
+        case "xs":
+        case "sm":
+        case "md":
+          modal.style = "height: 100dvh; width: 100dvw;";
+          break;
+
+        case "lg":
+          modal.style = "height: 70dvh; width: 90dvw;";
+          break;
+        default:
+          modal.style = "height: 70dvh; width: 50dvw;";
+          break;
+      }
 
       modal.showModal();
     });
