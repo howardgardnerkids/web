@@ -80,13 +80,18 @@ Astro.response.headers.set(
     }
   }
 
-  @keyframes rotate180 {
+  @keyframes animateFadeIn {
     0% {
       opacity: 0;
-      transform: rotate(0deg);
     }
-    3% {
+    100% {
       opacity: 1;
+    }
+  }
+
+  @keyframes rotate180 {
+    0% {
+      transform: rotate(0deg);
     }
     100% {
       transform: rotate(360deg);

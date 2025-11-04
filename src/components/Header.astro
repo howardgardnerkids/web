@@ -48,7 +48,7 @@ import Button from "@/components/Button.astro";
       <img
         src="/img/blob/vectorHome.png"
         alt="fondo naranja"
-        class="rotate180 absolute md:h-[310px] lg:h-[380px] xl:h-[420px] 2xl:h-[480px]"
+        class="rotate180 opacity-0 absolute md:h-[310px] lg:h-[380px] xl:h-[420px] 2xl:h-[480px]"
       />
       <img
         src="/img/personajes/fotoHeaderMonsterinc.webp"
@@ -90,12 +90,11 @@ import Button from "@/components/Button.astro";
     animation-delay: 600ms;
   }
 
-  .rotate180 {
-    opacity: 0;
-  }
   .rotate180.play {
-    animation: rotate180 30s linear infinite;
-    animation-delay: 2s;
+    animation:
+      animateFadeIn 1s ease-in forwards,
+      rotate180 30s linear infinite 2s;
+    animation-delay: 1s;
   }
 </style>
 
