@@ -16,6 +16,7 @@ export default defineConfig({
   site: "https://kinderhowardgardner.com",
 
   integrations: [react()],
+
   adapter: cloudflare(),
   output: "server",
 });
