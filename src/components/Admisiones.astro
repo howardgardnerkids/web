@@ -1,5 +1,5 @@
 ---
-import Button from "@/components/Button.astro";
+import ButtonForm from "@/components/ButtonForm.astro";
 ---
 
 <section class="relative w-full pt-20 pb-30 bg-gray">
@@ -153,6 +153,7 @@ import Button from "@/components/Button.astro";
             <input
               type="text"
               id="phone"
+              name="phone"
               class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="3023223145"
             />
@@ -188,6 +189,7 @@ import Button from "@/components/Button.astro";
             <input
               type="email"
               id="email"
+              name="email"
               class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="correo@gmail.com"
             />
@@ -198,7 +200,7 @@ import Button from "@/components/Button.astro";
       <div
         class="mx-auto my-5 w-11/12 sm:w-4/5 flex items-center justify-start"
       >
-        <Button type="submit" text="Solicitar Admisión" url="#" />
+        <ButtonForm text="Solicitar Admisión" />
       </div>
     </form>
   </div>
@@ -236,3 +238,25 @@ import Button from "@/components/Button.astro";
     </svg>
   </div>
 </section>
+
+<script>
+  import { actions } from "astro:actions";
+
+  const form = document.querySelector("form") as HTMLFormElement;
+
+  form?.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const formData = new FormData(form);
+    console.log(formData.get);
+
+    const { data, error } = await actions.adminision.sendEmail(formData);
+
+    if (error) {
+      console.log("error", error.message);
+      return;
+    }
+
+    console.log("todo bien", data);
+    form?.reset();
+  });
+</script>
