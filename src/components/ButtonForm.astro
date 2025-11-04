@@ -1,10 +1,10 @@
 ---
-const { text, url } = Astro.props;
+const { text } = Astro.props;
 ---
 
-<a
-  href={url}
-  class="animate-fade-in-up relative overflow-hidden rounded-[10px] border-b-[3px] border-accent z-[1] inline-block bg-transparent transition-all duration-300 ease-[cubic-bezier(0.785,0.135,0.15,0.86)] text-white font-semibold px-6 py-3 cursor-pointer"
+<button
+  type="submit"
+  class="relative overflow-hidden rounded-[10px] border-b-[3px] border-accent z-[1] inline-block bg-transparent transition-all duration-300 ease-[cubic-bezier(0.785,0.135,0.15,0.86)] text-white font-semibold px-6 py-3 cursor-pointer"
 >
   {text}
   <span
@@ -25,33 +25,17 @@ const { text, url } = Astro.props;
       ></span>
     </span>
   </span>
-</a>
+</button>
 
 <style>
-  a.relative::before {
+  button.relative::before {
     content: "";
     position: absolute;
     inset: 0;
     z-index: 1;
   }
 
-  a:hover .blob-dl-btn__blobs span {
+  button:hover .blob-dl-btn__blobs span {
     transform: translateY(-40%) scale(1.7);
   }
-
-  .animate-fade-in-up {
-    animation-play-state: paused;
-  }
-  .animate-fade-in-up.play {
-    animation-play-state: running;
-    animation-duration: 1.5s;
-  }
 </style>
-
-<script>
-  import { observer } from "@/utils/observer";
-
-  document
-    .querySelectorAll(".animate-fade-in-up")
-    .forEach((el) => observer.observe(el));
-</script>
