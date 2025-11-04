@@ -1,5 +1,6 @@
 ---
 import ButtonForm from "@/components/ButtonForm.astro";
+import RespuestaForm from "@/components/RespuestaForm.astro";
 ---
 
 <section class="relative w-full pt-20 pb-30 bg-gray">
@@ -17,7 +18,7 @@ import ButtonForm from "@/components/ButtonForm.astro";
     </svg>
   </div>
 
-  <div class="hidden lg:block absolute z-10 left-24 top-0">
+  <div class="hidden lg:block absolute z-10 left-24 top-0 pointer-events-none">
     <div class="relative size-[17rem] lg:sze-[26rem] xl:size-[27rem]">
       <img
         class="absolute bottom-3 xl:bottom-8 2xl:bottom-0 -left-6 lg:left-12 xl:left-12 2xl:left-32 -translate-x-1/2 w-8/12 h-16"
@@ -33,7 +34,7 @@ import ButtonForm from "@/components/ButtonForm.astro";
   </div>
 
   <div
-    class="max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl mx-auto w-full"
+    class="max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl mx-auto w-full z-20"
   >
     <form
       class="w-11/12 sm:w-4/5 md:w-11/12 lg:w-9/12 mx-auto bg-white shadow-2xl rounded-3xl py-10"
@@ -153,12 +154,54 @@ import ButtonForm from "@/components/ButtonForm.astro";
           class="mx-0 lg:mx-auto flex items-center md:items-start xl:items-center justify-start w-full"
         >
           <ButtonForm text="Enviar" />
+          <div id="loading" class="opacity-0 flex items-center gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="128"
+              height="128"
+              viewBox="0 0 24 24"
+              class="size-14"
+              ><g
+                fill="none"
+                stroke="#0891b2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                ><path
+                  stroke-dasharray="16"
+                  stroke-dashoffset="16"
+                  d="M12 3c4.97 0 9 4.03 9 9"
+                  ><animate
+                    fill="freeze"
+                    attributeName="stroke-dashoffset"
+                    dur="0.3s"
+                    values="16;0"></animate><animateTransform
+                    attributeName="transform"
+                    dur="1.5s"
+                    repeatCount="indefinite"
+                    type="rotate"
+                    values="0 12 12;360 12 12"></animateTransform></path
+                ><path
+                  stroke-dasharray="64"
+                  stroke-dashoffset="64"
+                  stroke-opacity=".3"
+                  d="M12 3c4.97 0 9 4.03 9 9c0 4.97 -4.03 9 -9 9c-4.97 0 -9 -4.03 -9 -9c0 -4.97 4.03 -9 9 -9Z"
+                  ><animate
+                    fill="freeze"
+                    attributeName="stroke-dashoffset"
+                    dur="1.2s"
+                    values="64;0"></animate></path
+                ></g
+              ></svg
+            >
+            <span class="text-primary">Enviando...</span>
+          </div>
         </div>
       </div>
     </form>
 
     <div
-      class="absolute z-40 right-0 sm:right-1 xl:right-0 bottom-20 sm:bottom-[72px] lg:bottom-[60px] xl:bottom-16"
+      class="absolute z-40 right-0 sm:right-1 xl:right-0 bottom-20 sm:bottom-[72px] lg:bottom-[60px] xl:bottom-16 pointer-events-none"
     >
       <div
         class="relative size-[15rem] sm:size-[18rem] md:size-[20rem] lg:size-[25rem] xl:size-[29rem] 2xl:size-[34rem]"
@@ -192,13 +235,26 @@ import ButtonForm from "@/components/ButtonForm.astro";
   </div>
 </section>
 
+<RespuestaForm
+  msgSuccess="¡El correo se envio correctamente!"
+  msgError="¡Hubo un error al enviar el correo!"
+/>
+
 <script>
   import { actions } from "astro:actions";
 
-  const form = document.querySelector("form") as HTMLFormElement;
+  const form = document.querySelector("form") as HTMLFormElement,
+    dialogForm = document.getElementById("dialogForm") as HTMLDialogElement,
+    dialogFormError = document.getElementById(
+      "dialogFormError"
+    ) as HTMLDialogElement,
+    btnForm = document.getElementById("btnForm") as HTMLButtonElement,
+    loading = document.getElementById("loading") as HTMLDivElement;
 
   form?.addEventListener("submit", async (event) => {
     event.preventDefault();
+    btnForm.disabled = true;
+    loading?.classList.remove("opacity-0");
     const formData = new FormData(form);
     console.log(formData.get);
 
@@ -206,10 +262,16 @@ import ButtonForm from "@/components/ButtonForm.astro";
 
     if (error) {
       console.log("error", error.message);
+      dialogFormError?.showModal();
+      btnForm.disabled = false;
+      loading?.classList.add("opacity-0");
       return;
     }
 
     console.log("todo bien", data);
     form?.reset();
+    dialogForm?.showModal();
+    btnForm.disabled = false;
+    loading?.classList.add("opacity-0");
   });
 </script>

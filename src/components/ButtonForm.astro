@@ -4,13 +4,14 @@ const { text } = Astro.props;
 
 <button
   type="submit"
+  id="btnForm"
   class="relative overflow-hidden rounded-[10px] border-b-[3px] border-accent z-[1] inline-block bg-transparent transition-all duration-300 ease-[cubic-bezier(0.785,0.135,0.15,0.86)] text-white font-semibold px-6 py-3 cursor-pointer"
 >
   {text}
   <span
-    class="blob-dl-btn__inner absolute left-0 top-0 w-full h-full rounded-[2px] bg-accent-700 transition-all duration-300 ease-[cubic-bezier(0.785,0.135,0.15,0.86)] -z-10 overflow-hidden"
+    class="blob-dl-btn__inner absolute left-0 top-0 w-full h-full rounded-[2px] bg-accent-700 disabled:bg-gray-600 transition-all duration-300 ease-[cubic-bezier(0.785,0.135,0.15,0.86)] -z-10 overflow-hidden"
   >
-    <span class="blob-dl-btn__blobs relative block h-full">
+    <span class="blob-dl-btn__blobs relative block h-full disabled:hidden">
       <span
         class="absolute top-[2px] left-[0%] w-1/4 h-full rounded-full bg-accent transform translate-y-[150%] scale-[1.7] transition-transform duration-[750ms] delay-[0s]"
       ></span>
