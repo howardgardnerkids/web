@@ -51,9 +51,9 @@ export const servicios = [
     fillIconHome: "fill-primary",
     subtitleServicios: "Creciendo con emociones sanas",
     descripHome:
-      "La psicología es clave en esta etapa porque guía a los niños en su desarrollo emocional y social. En el jardín se diseña mensualmente un menú adaptado a sus necesidades.",
+      "Es clave en esta etapa al guíar a los niños en su desarrollo emocional y social, comprender y apoyar su desarrollo cognitivo, emocional y social e interviniendo en problemas que afecten su bienestar.",
     descripServicios:
-      "Reconocemos que el desarrollo emocional en los niños es tan importante como el académico. Por eso, en nuestro jardin, contamos con el servicio de psicología profesional, enfocado en acompañar a los niños de manera individual y brindar apoyo a las familias cuando es necesario. El objetivo es favorecer el bienestar integral de cada niño, potenciando sus habilidades sociales, su autoestima y la gestión adecuada de sus emociones, en un ambiente lleno de respeto y afecto.",
+      "Reconocemos que el desarrollo emocional en los niños es tan importante como el académico. Por eso, en nuestro jardín, contamos con el servicio de psicología profesional, enfocado en acompañar a los niños de manera individual y brindar apoyo a las familias cuando es necesario. El objetivo es favorecer el bienestar integral de cada niño, potenciando sus habilidades sociales, su autoestima y la gestión adecuada de sus emociones, en un ambiente lleno de respeto y afecto.",
     hrefHome: "/servicios",
     iconHome: "psicologia",
     icon1Servicios: "/img/services/psicologiaServiceMonter.webp",
@@ -94,9 +94,9 @@ export const servicios = [
     subtitleServicios:
       "De la casa al Jardín y retorno a casa, una experiencia segura y tranquila",
     descripHome:
-      "Ofrecemos un servicio de ruta escolar seguro y confiable, con personal capacitado y vehículo adaptado para el transporte de niños, garantizando tranquilidad y comodidad a los padres.",
+      "Ofrecemos un servicio de ruta escolar segura y confiable, con personal capacitado y vehículo adaptado para el transporte de niños, garantizando tranquilidad y comodidad a los padres.",
     descripServicios:
-      "Nuestro servicio de ruta escolar brinda confianza y tranquilidad a las familias. Acompañamos a los niños en cada trayecto para que lleguen puntuales, tranquilos y listos para disfrutar de su día en el jardín y su retorno a casa",
+      "Nuestro servicio de ruta escolar brinda confianza y tranquilidad a las familias. Acompañamos a los niños en cada trayecto para que lleguen puntuales, tranquilos y listos para disfrutar de su día en el jardín y su retorno a casa.",
     hrefHome: "/servicios",
     iconHome: "ruta",
     icon1Servicios: "/img/services/rutaServiceMonster.webp",

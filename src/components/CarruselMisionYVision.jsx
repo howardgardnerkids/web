@@ -19,7 +19,7 @@ const data = [
     desc1:
       "Brindar a los niños y niñas un ambiente cálido y afectuoso donde el juego, el amor y la creatividad sean las herramientas principales para su aprendizaje y desarrollo integral. Nuestro compromiso es apoyar a las familias en la formación de seres humanos con valores, confianza en sí mismos e imaginación, preparados para afrontar con alegría cada etapa de su vida.",
     desc2:
-      "Para el 2026 el jardín infantil HOWARD GARDNER busca mantener y mejorar el reconocimiento como uno de los mejores jerdínes de Bogotá, altamente calificados para el mejor desarrollo y la mejor formación integral en los niños, con calor humano, responsabilidad e innovación.",
+      "Para el 2026 el jardín infantil HOWARD GARDNER busca mantener y mejorar el reconocimiento como uno de los mejores jardínes de Bogotá, altamente calificados para el mejor desarrollo y la mejor formación integral en los niños, con calor humano, responsabilidad e innovación.",
     lista: [],
     img1: "/img/personajes/booYSolivan.webp",
     img2: "/img/blob/VectorVerde.png",
@@ -33,7 +33,7 @@ const data = [
     desc1:
       "Ser un jardín infantil reconocido por nuestra excelencia en la formación integral, donde el amor, la imaginación y los valores se conviertan en la base de una niñez feliz. Queremos ser el lugar de confianza de las familias, un espacio donde cada niño crezca seguro, amado y lleno de posibilidades.",
     desc2:
-      "El jardín infantil HOWARD GARDNER tiene como objetivo desarrollar desde el juego y el afecto la formación integral de los niñas para fortalecer su autoestima, cultivar valores, despertar su imaginación y su creatividad a través de ambientes adecuados que brinden seguridad para aprender, tomar desiciones y enfrentarse a los cambios de su entorno social.",
+      "El jardín infantil HOWARD GARDNER tiene como objetivo desarrollar desde el juego y el afecto la formación integral de los niños para fortalecer su autoestima, cultivar valores, despertar su imaginación y su creatividad a través de ambientes adecuados que brinden seguridad para aprender, tomar desiciones y enfrentarse a los cambios de su entorno social.",
     lista: [],
     img1: "/img/personajes/booYSolivan.webp",
     img2: "/img/blob/vectorNaranjaOscuro.png",
@@ -48,11 +48,11 @@ const data = [
       "Más que un jardín infantil, somos una familia que acompaña el crecimiento de cada niño con amor, dedicación y respeto. Aquí, los padres encuentran un aliado en la formación integral de sus hijos, con la confianza de que cada paso está guiado por el cariño y la excelencia educativa. Nuestros Valores:",
     desc2: "",
     lista: [
-      "Amor: La base de cada enseñanza",
-      "Creatividad: Despertamos la imaginación para explorar el mundo",
-      "Autoestima: Acompañamos a los niños a creer en sí mismos",
-      "Respeto y valores: Sembramos principios que duran toda la vida",
-      "Juego: Nuestra mejor herramienta para aprender y disfrutar",
+      "Amor: La base de cada enseñanza.",
+      "Creatividad: Despertamos la imaginación para explorar el mundo.",
+      "Autoestima: Acompañamos a los niños a creer en sí mismos.",
+      "Respeto y valores: Sembramos principios que duran toda la vida.",
+      "Juego: Nuestra mejor herramienta para aprender y disfrutar.",
     ],
     img1: "/img/personajes/booYSolivan.webp",
     img2: "/img/blob/VectorVerde.png",

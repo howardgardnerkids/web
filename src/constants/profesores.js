@@ -5,7 +5,7 @@ export const profesores = [
     title: "Danny Cardozo",
     subtitle: "8 años de experiencia",
     description1:
-      "La profesional de párvulos es una guía amoroso y profesional que acompaña a cada niño con ternura y paciencia en sus primeros pasos escolares. Su prioridad es brindar un entorno familiar donde los pequeños se sientan queridos, escuchados y valorados.",
+      "La profesional de párvulos es una guía amorosa y profesional que acompaña a cada niño con ternura y paciencia en sus primeros pasos escolares. Su prioridad es brindar un entorno familiar donde los pequeños se sientan queridos, escuchados y valorados.",
     description2:
       "Con dedicación y cariño, crean experiencias llenas de juego, descubrimiento y alegría, fortaleciendo la confianza, la autoestima y los vínculos afectivos. Así, cada día se convierte en una oportunidad para aprender con amor.",
     principal: true,
@@ -14,9 +14,9 @@ export const profesores = [
     img: "/img/profesores/preJardin.webp",
     titlePp: "Profesora de Pre-jardín",
     title: "Carol Castillo",
-    subtitle: "4 años de experiencia",
+    subtitle: "17 años de experiencia",
     description1:
-      "La profesional de Pre-Jardín es una acompañante cercano que entiende la importancia de esta etapa de transición, donde los niños comienzan a descubrir con mayor autonomía el mundo que los rodea. Ella crea un ambiente acogedor, donde cada niño se siente confiado para explorar, preguntar y compartir.",
+      "La profesional de Pre-Jardín es una acompañante cercana que entiende la importancia de esta etapa de transición, donde los niños comienzan a descubrir con mayor autonomía el mundo que los rodea. Ella crea un ambiente acogedor, donde cada niño se siente confiado para explorar, preguntar y compartir.",
     description2:
       "A través del juego, la creatividad y la imaginación, el docente fomenta el desarrollo de habilidades sociales, comunicativas y emocionales, siempre desde el afecto y la calidez humana.",
     principal: true,
@@ -25,7 +25,7 @@ export const profesores = [
     img: "/img/profesores/jardin.webp",
     titlePp: "Profesora de Jardín",
     title: "Nury Peña",
-    subtitle: "5 años de experiencia",
+    subtitle: "10 años de experiencia",
     description1:
       "La profesional de Jardín acompaña a los niños en una etapa llena de descubrimientos, donde la curiosidad y la imaginación se convierten en herramientas para aprender con alegría. Brinda un entorno seguro y estimulante que motiva a los pequeños a explorar nuevas ideas, sus emociones y fortalecer su autonomía.",
     description2:
@@ -59,7 +59,7 @@ export const profesores = [
     img: "/img/profesores/artes.webp",
     titlePp: "Profesora de Artes",
     title: "Carol Castillo",
-    subtitle: "2 años de experiencia",
+    subtitle: "17 años de experiencia",
     description1:
       "La profesora de Artes inspira a los niños a expresar sus emociones y creatividad a través de los colores, las formas y la imaginación. En un ambiente acogedor y alegre, guía a los pequeños en actividades que despiertan su curiosidad, fomentan la confianza en sí mismos y desarrollan la sensibilidad artística desde el juego y la exploración.",
     description2:
@@ -72,7 +72,7 @@ export const profesores = [
     title: "Johanna Ramirez",
     subtitle: "5 años de experiencia",
     description1:
-      "El profesor de Fútbol es un guía cercano que motiva a los niños a descubrir el valor del movimiento, el trabajo en equipo y la disciplina a través del juego. Crea un entorno divertido y seguro, donde los pequeños aprenden a disfrutar del deporte mientras desarrollan coordinación, fuerza y confianza.",
+      "La profesora de Fútbol es un guía cercana que motiva a los niños a descubrir el valor del movimiento, el trabajo en equipo y la disciplina a través del juego. Crea un entorno divertido y seguro, donde los pequeños aprenden a disfrutar del deporte mientras desarrollan coordinación, fuerza y confianza.",
     description2:
       "Más allá de la práctica física, enseña valores como el respeto, la cooperación y la amistad, haciendo de cada entrenamiento una experiencia que fortalece tanto el cuerpo como el corazón.",
     principal: false,
@@ -83,7 +83,7 @@ export const profesores = [
     title: "Yaira Herrera",
     subtitle: "10 años de experiencia",
     description1:
-      "Nuestro profesor guía a los niños en el aprendizaje del Taekwondo a través del juego y la disciplina, fomentando valores como el respeto, la concentración y la confianza en sí mismos",
+      "Nuestra profesora de ballet cuenta con sólida experiencia guiando a niñas en sus primeros acercamientos al movimiento, la coordinación y la expresión corporal. A través de clases dinámicas, creativas y llenas de ritmo, fomenta la disciplina, la imaginación, el trabajo en equipo y la seguridad emocional",
     description2:
       "Con ternura y paciencia, acompaña cada paso y cada movimiento, celebrando los logros y transmitiendo el amor por la danza.",
     principal: false,
