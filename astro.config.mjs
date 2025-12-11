@@ -7,6 +7,8 @@ import react from "@astrojs/react";
 
 import cloudflare from "@astrojs/cloudflare";
 
+import sitemap from "@astrojs/sitemap";
+
 // https://astro.build/config
 export default defineConfig({
   vite: {
@@ -15,7 +17,7 @@ export default defineConfig({
 
   site: "https://kinderhowardgardner.com",
 
-  integrations: [react()],
+  integrations: [react(), sitemap()],
 
   adapter: cloudflare(),
   output: "server",
